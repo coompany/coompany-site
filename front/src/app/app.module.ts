@@ -5,10 +5,16 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './translate';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -16,7 +22,9 @@ import { AppComponent } from './app.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    TRANSLATION_PROVIDERS, TranslateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

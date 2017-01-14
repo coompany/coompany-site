@@ -1,0 +1,25 @@
+@import "../../variables";
+
+
+:host {
+
+  #home-jumbo {
+    background-image: url(http://placehold.it/1200x800?text=+);
+    background-position: center;
+    min-height: 400px;
+    padding: 100px 0;
+  }
+
+  .fluid {
+    position: relative;
+  }
+
+  h3 {
+    margin: 40px 0;
+  }
+
+  img.img-divider {
+    margin: 40px 0;
+  }
+
+}

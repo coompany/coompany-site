@@ -1,0 +1,21 @@
+<div id="home-jumbo" class="fluid" [style.width]="innerWidth + 'px'" [style.left]="'-' + leftSpacing + 'px'">
+  <div class="container">
+    <h2 class="text-center" [innerHTML]="'home.jumbo' | translate"></h2>
+    <div class="text-center">
+      <a class="btn btn-outline-primary btn-lg" href="#">
+        {{ 'home.jumbo.btn' | translate }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
+    <p [innerHTML]="'home.what.text' | translate"></p>
+    <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
+    <p [innerHTML]="'home.what.text' | translate"></p>
+  </div>
+</div>
+
+<hr class="fluid" [style.width]="innerWidth + 'px'" [style.left]="'-' + leftSpacing + 'px'" />

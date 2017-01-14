@@ -1,3 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Founders Grotesk Text";
+    src: url(assets/fonts/FoundersGroteskText-Regular.otf);
+}
+@font-face {
+    font-family: "Founders Grotesk Text";
+    font-style: italic;
+    src: url(assets/fonts/FoundersGroteskText-RegularItalic.otf);
+}
+@font-face {
+    font-family: "Founders Grotesk Text";
+    font-weight: bold;
+    src: url(assets/fonts/FoundersGroteskText-Bold.otf);
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(assets/fonts/RobotoMono-Regular.ttf);
+}
+
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}

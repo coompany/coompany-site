@@ -1,1 +1,15 @@
 @import '~bootstrap/scss/_variables.scss';
+$font-family-base: "Founders Grotesk Text";
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 832px,
+  xl: 832px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 800px,
+  xl: 800px
+);

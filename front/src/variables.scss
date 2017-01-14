@@ -13,3 +13,5 @@ $container-max-widths: (
   lg: 800px,
   xl: 800px
 );
+$link-color: $body-color;
+$link-hover-color: darken($link-color, 15%);

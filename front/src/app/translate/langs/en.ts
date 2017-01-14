@@ -12,5 +12,16 @@ export const LANG_EN_VALUES = {
     allows us to develop powerful and cutting-edge platforms. Our ‘User Centered’
     approach makes us different. We consider the ergonomic according to usability
     criteria in order to make browsing as easy as intuitive and offer an attractive
-    and optimal consultation experience for users.`
+    and optimal consultation experience for users.`,
+
+  'footer.sitemap.title': 'Site map:',
+  'footer.findus.title': 'Find us on:',
+  'footer.hear.title': 'We\'d love to hear from you:',
+  'footer.sitemap.home': 'Homepage',
+  'footer.sitemap.what': 'What we do',
+  'footer.sitemap.projects': 'Projects',
+  'footer.sitemap.clients': 'Clients',
+  'footer.sitemap.journal': 'Journal',
+  'footer.sitemap.join': 'Join us',
+  'footer.text': 'Coompany s.r.l.s. Italy. All rights reserverd.'
 };

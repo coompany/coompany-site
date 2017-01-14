@@ -1,0 +1,45 @@
+<footer class="container">
+  <div class="row">
+    <div class="col-2">
+      <h6>{{ 'footer.sitemap.title' | translate }}</h6>
+      <ul class="list-unstyled">
+        <li routerLinkActive="active">
+          <a routerLink="/">{{ 'footer.sitemap.home' | translate }}</a>
+        </li>
+        <li>
+          <a href="#what-we-do">{{ 'footer.sitemap.what' | translate }}</a>
+        </li>
+        <li>
+          <a href="#projects">{{ 'footer.sitemap.projects' | translate }}</a>
+        </li>
+        <li>
+          <a href="#clients">{{ 'footer.sitemap.clients' | translate }}</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/journal">{{ 'footer.sitemap.journal' | translate }}</a>
+        </li>
+        <li>
+          <a href="#join-us">{{ 'footer.sitemap.join' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h6>{{ 'footer.findus.title' | translate }}</h6>
+      <ul class="list-unstyled">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h6>{{ 'footer.hear.title' | translate }}</h6>
+      <a href="mailto:info@coompany.eu">info@coompany.eu</a>
+      <a href="tel:+390000000000">+39 000 000 0000</a>
+    </div>
+  </div>
+  <div class="row" id="copy">
+    <div class="col-12">
+      &copy;2017 {{ 'footer.text' | translate }}
+    </div>
+  </div>
+</footer>

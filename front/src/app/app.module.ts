@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './translate';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    TranslatePipe
+    TranslatePipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -48,4 +48,11 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
   }
+
+  app-root {
+    & > .container:first-of-type {
+      margin-top: 60px;
+      padding-top: 40px;
+    }
+  }
 }

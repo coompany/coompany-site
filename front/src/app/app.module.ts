@@ -11,6 +11,8 @@ import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './transl
 import { FooterComponent } from './footer/footer.component';
 import { FluidifyDirective } from './fluidify.directive';
 import { ProjectComponent } from './home/project/project.component';
+import { JournalComponent, JournalService } from './journal';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ProjectComponent } from './home/project/project.component';
     TranslatePipe,
     FooterComponent,
     FluidifyDirective,
-    ProjectComponent
+    ProjectComponent,
+    JournalComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { ProjectComponent } from './home/project/project.component';
     AppRoutingModule
   ],
   providers: [
-    TRANSLATION_PROVIDERS, TranslateService
+    TRANSLATION_PROVIDERS, TranslateService,
+    JournalService
   ],
   bootstrap: [AppComponent]
 })

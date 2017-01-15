@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
+import { JournalComponent } from './journal';
+
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   }, {
+    path: 'journal',
+    component: JournalComponent
+  }, {
     path: '**',
-    redirectTo: '/'
+    redirectTo: '/home'
   }
 ];
 

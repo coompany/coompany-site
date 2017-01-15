@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Project, Client } from '../shared';
+import { TranslateService } from '../translate';
 
+
+declare let jQuery: any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   private projects: [Project] = [
     new Project('coo2plan', 'http://placehold.it/550x450'),
@@ -35,6 +38,31 @@ export class HomeComponent {
       start: { h: 9, m: 0 },
       end: { h: 18, m: 0 }
     }
+  }
+
+  private quotes: [string] = [
+    'home.quotes.1',
+    'home.quotes.2',
+    'home.quotes.3',
+    'home.quotes.4'
+  ]
+
+  constructor(private translateService: TranslateService) { }
+
+  ngOnInit() {
+    jQuery(document).ready(() => {
+      this.doTypedQuotes();
+    });
+  }
+
+  private doTypedQuotes() {
+    jQuery('#they-tell-card .quote').typed({
+      strings: this.quotes.map(q => { return this.translateService.instant(q) }),
+      contentType: 'html',
+      typeSpeed: 20,
+      loop: true,
+      backDelay: 3000
+    });
   }
 
   get openingStatus(): string {

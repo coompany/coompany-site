@@ -30,6 +30,11 @@ export const LANG_EN_VALUES = {
     From: 09:00 To: 18:00<br />
     Sat. to Sun.<br />
     Closed`,
+  'home.contacts.theytell': 'They tell about us',
+  'home.quotes.1':
+    `"Coompany are some of the best developers user interface designers I have met anywhere."
+    <br /><br />
+   Giovanni Paolin, Project Manager, Cren Design`,
 
   'coo2plan.name': 'Coo2plan',
   'coo2plan.subtitle': 'Web based platform',

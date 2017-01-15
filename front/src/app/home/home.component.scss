@@ -37,6 +37,20 @@ $space: 40px;
     }
   }
 
+  #they-tell-card {
+    margin-top: $space / 2;
+    font-family: "Roboto Mono";
+    .card-header {
+      text-align: center;
+    }
+    .card-block {
+      height: 220px;
+      .card-text {
+        font-size: 14px;
+      }
+    }
+  }
+
   hr:last-of-type {
     margin-top: $space * 2;
   }

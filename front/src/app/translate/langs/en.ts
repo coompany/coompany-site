@@ -35,6 +35,13 @@ export const LANG_EN_VALUES = {
     `"Coompany are some of the best developers user interface designers I have met anywhere."
     <br /><br />
    Giovanni Paolin, Project Manager, Cren Design`,
+  'home.join.title': 'Join us',
+  'home.join.message.label': 'Your message',
+  'home.join.message.placeholder': 'Your message here...',
+  'home.join.address.label': 'Your e-mail',
+  'home.join.address.placeholder': 'email@example.com',
+  'home.join.send': 'Send',
+  'home.join.sent': 'Sent',
 
   'coo2plan.name': 'Coo2plan',
   'coo2plan.subtitle': 'Web based platform',

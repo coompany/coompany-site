@@ -47,6 +47,8 @@ export class HomeComponent implements OnInit {
     'home.quotes.4'
   ]
 
+  public joinSendTxt: string = 'home.join.send';
+
   constructor(private translateService: TranslateService) { }
 
   ngOnInit() {

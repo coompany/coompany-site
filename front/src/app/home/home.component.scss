@@ -39,6 +39,7 @@ $space: 40px;
 
   #they-tell-card {
     margin-top: $space / 2;
+    margin-bottom: $space;
     font-family: "Roboto Mono";
     .card-header {
       text-align: center;
@@ -48,6 +49,16 @@ $space: 40px;
       .card-text {
         font-size: 14px;
       }
+    }
+  }
+
+  #join-us {
+    form .row:last-of-type {
+      margin-top: $space;
+    }
+    .form-control {
+      border-width: 0;
+      padding: 0;
     }
   }
 

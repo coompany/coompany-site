@@ -110,3 +110,36 @@
 </div>
 
 <hr coomFluidify />
+
+<div class="row" id="join-us">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
+    <form>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <label for="input-message">
+            {{ 'home.join.message.label' | translate }}
+          </label>
+          <textarea required name="input-message" id="input-message" class="form-control"
+            rows="8" [placeholder]="'home.join.message.placeholder' | translate"></textarea>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="input-address">
+            {{ 'home.join.address.label' | translate }}
+          </label>
+          <input type="email" required name="input-address" id="input-address" class="form-control"
+            [placeholder]="'home.join.address.placeholder' | translate" />
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-lg btn-outline-primary">
+            {{ joinSendTxt | translate }}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<hr coomFluidify />

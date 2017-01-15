@@ -1,4 +1,4 @@
-<div id="home-jumbo" coomFluidify>
+<section id="home-jumbo" coomFluidify>
   <div class="container">
     <h2 class="text-center" [innerHTML]="'home.jumbo' | translate"></h2>
     <div class="text-center">
@@ -7,20 +7,20 @@
       </a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
     <p [innerHTML]="'home.what.text' | translate"></p>
     <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
     <p [innerHTML]="'home.what.text' | translate"></p>
   </div>
-</div>
+</section>
 
 <hr coomFluidify />
 
-<div class="row">
+<section class="row">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
     <div class="row" *ngFor="let project of projects">
@@ -29,11 +29,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <hr coomFluidify />
 
-<div class="row">
+<section class="row">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
     <div class="row">
@@ -44,11 +44,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <hr coomFluidify />
 
-<div class="row">
+<section class="row">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
     <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
@@ -107,11 +107,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <hr coomFluidify />
 
-<div class="row" id="join-us">
+<section class="row" id="join-us">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
     <form>
@@ -140,6 +140,6 @@
       </div>
     </form>
   </div>
-</div>
+</section>
 
 <hr coomFluidify />

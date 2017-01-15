@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './translate';
 import { FooterComponent } from './footer/footer.component';
+import { FluidifyDirective } from './fluidify.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     TranslatePipe,
-    FooterComponent
+    FooterComponent,
+    FluidifyDirective
   ],
   imports: [
     BrowserModule,

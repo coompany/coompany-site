@@ -16,6 +16,20 @@ export const LANG_EN_VALUES = {
   'home.projects.title': 'Selected Projects',
   'home.projects.more': 'Read more',
   'home.clients.title': 'Clients',
+  'home.contacts.title': 'Contacts',
+  'home.contacts.text': `
+    We are an independent digital agency. We create your websites
+    and mobile applications from <b>A to Z</b>: our input includes digital brand
+    strategy, design and web development. Our relentless curiosity for innovation
+    allows us to develop powerful and cutting-edge platforms. Our ‘User Centered’
+    approach makes us different. We consider the ergonomic according to usability
+    criteria in order to make browsing as easy as intuitive and offer an attractive
+    and optimal consultation experience for users.`,
+  'home.contacts.hours': `
+    Mon. to Sat.<br />
+    From: 09:00 To: 18:00<br />
+    Sat. to Sun.<br />
+    Closed`,
 
   'coo2plan.name': 'Coo2plan',
   'coo2plan.subtitle': 'Web based platform',
@@ -35,5 +49,15 @@ export const LANG_EN_VALUES = {
   'footer.sitemap.clients': 'Clients',
   'footer.sitemap.journal': 'Journal',
   'footer.sitemap.join': 'Join us',
-  'footer.text': 'Coompany s.r.l.s. Italy. All rights reserverd.'
+  'footer.text': 'Coompany s.r.l.s. Italy. All rights reserverd.',
+
+  'italy': 'Italy',
+  'btw': 'VAT',
+  'tel': 'Tel',
+  'info': 'Info',
+  'assistance': 'Assistance',
+  'venice': 'Venice, Italy',
+  'now': 'Now',
+  'open': 'OPEN',
+  'closed': 'CLOSED'
 };

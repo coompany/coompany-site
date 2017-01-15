@@ -1,6 +1,8 @@
 @import "../../variables";
 
 
+$space: 40px;
+
 :host {
 
   #home-jumbo {
@@ -11,15 +13,32 @@
   }
 
   h3 {
-    margin: 40px 0;
+    margin: $space 0;
   }
 
   img.img-divider {
-    margin: 40px 0;
+    margin: $space 0;
   }
 
   .client-col {
-    margin-top: 30px;
+    margin-bottom: $space;
+  }
+
+  .contacts-row {
+    margin-top: $space;
+  }
+
+  span {
+    &.open-status {
+      color: lighten(saturate(green, 40%), 10%);
+    }
+    &.closed-status {
+      color: red;
+    }
+  }
+
+  hr:last-of-type {
+    margin-top: $space * 2;
   }
 
 }

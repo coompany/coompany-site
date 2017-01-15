@@ -47,3 +47,56 @@
 </div>
 
 <hr coomFluidify />
+
+<div class="row">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
+    <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
+    <p [innerHTML]="'home.contacts.text' | translate"></p>
+    <div class="row contacts-row">
+      <div class="col-6">
+        <img class="img-fluid mx-auto d-block" src="http://placehold.it/350x300" />
+      </div>
+      <div class="col-6">
+        <p>
+          Coompany s.r.l.s.<br />
+          Via Abate Gimma 248, 70100, Bari, {{ 'italy' | translate }}<br />
+          {{ 'btw' | translate }}: 00000000000<br />
+          <br />
+          {{ 'tel' | translate }}: <a href="tel:+3100000000000">+3100000000000</a><br />
+          {{ 'info' | translate }}: <a href="mailto:info@coompany.eu">info@coompany.eu</a><br />
+          {{ 'assistance' | translate }}: <a href="mailto:assistance@coompany.eu">assistance@coompany.eu</a>
+        </p>
+      </div>
+    </div>
+    <div class="row contacts-row">
+      <div class="col-2">
+        <img src="http://placehold.it/100x100" class="rounded-circle" />
+      </div>
+      <div class="col-4">
+        <div>{{ 'venice' | translate }}</div>
+        <div>
+          {{ 'now' | translate }}:
+          <span [ngClass]="{ 'open-status': weOpen, 'closed-status': !weOpen }">
+            {{ openingStatus | translate }}
+          </span>
+        </div>
+        <br />
+        <div [innerHTML]="'home.contacts.hours' | translate"></div>
+      </div>
+      <div class="col-6">
+        <h5>Team</h5>
+        <p>
+          Vittorio Netti, CEO &amp; Founder<br />
+          <a href="mailto:v.netti@coompany.eu">v.netti@coompany.eu</a>
+        </p>
+        <p>
+          Andrea Jemmett, CTO &amp; Founder<br />
+          <a href="mailto:a.jemmett@coompany.eu">a.jemmett@coompany.eu</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr coomFluidify />

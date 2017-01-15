@@ -11,3 +11,5 @@ export class Project {
     this.summary = prefix + '.summary';
   }
 }
+
+export type Client = { name: string, img: string, href: string }

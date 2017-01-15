@@ -15,6 +15,7 @@ export const LANG_EN_VALUES = {
     and optimal consultation experience for users.`,
   'home.projects.title': 'Selected Projects',
   'home.projects.more': 'Read more',
+  'home.clients.title': 'Clients',
 
   'coo2plan.name': 'Coo2plan',
   'coo2plan.subtitle': 'Web based platform',

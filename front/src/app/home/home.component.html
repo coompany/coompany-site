@@ -32,3 +32,18 @@
 </div>
 
 <hr coomFluidify />
+
+<div class="row">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
+    <div class="row">
+      <div class="col-4 client-col" *ngFor="let client of clients">
+        <a [href]="client.href" [title]="client.name">
+          <img class="img-fluid" [src]="client.img" [alt]="client.name">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr coomFluidify />

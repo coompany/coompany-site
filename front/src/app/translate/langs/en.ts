@@ -13,6 +13,17 @@ export const LANG_EN_VALUES = {
     approach makes us different. We consider the ergonomic according to usability
     criteria in order to make browsing as easy as intuitive and offer an attractive
     and optimal consultation experience for users.`,
+  'home.projects.title': 'Selected Projects',
+  'home.projects.more': 'Read more',
+
+  'coo2plan.name': 'Coo2plan',
+  'coo2plan.subtitle': 'Web based platform',
+  'coo2plan.summary': `We are an independent digital agency.
+    We create your websites and mobile applications from`,
+  'sos.name': 'Scuola Open Source',
+  'sos.subtitle': 'Web based platform',
+  'sos.summary': `We are an independent digital agency.
+    We create your websites and mobile applications from`,
 
   'footer.sitemap.title': 'Site map:',
   'footer.findus.title': 'Find us on:',

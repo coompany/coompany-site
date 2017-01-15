@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { Project } from '../shared';
 
 
 @Component({
@@ -6,4 +8,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent { }
+export class HomeComponent {
+
+  private projects: [Project] = [
+    new Project('coo2plan', 'http://placehold.it/550x450'),
+    new Project('sos', 'http://placehold.it/550x450'),
+    new Project('coo2plan', 'http://placehold.it/550x450')
+  ]
+
+}

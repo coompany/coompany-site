@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './translate';
 import { FooterComponent } from './footer/footer.component';
 import { FluidifyDirective } from './fluidify.directive';
+import { ProjectComponent } from './home/project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FluidifyDirective } from './fluidify.directive';
     HomeComponent,
     TranslatePipe,
     FooterComponent,
-    FluidifyDirective
+    FluidifyDirective,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

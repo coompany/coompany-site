@@ -19,3 +19,16 @@
 </div>
 
 <hr coomFluidify />
+
+<div class="row">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
+    <div class="row" *ngFor="let project of projects">
+      <div class="col-12">
+        <app-project [project]="project"></app-project>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr coomFluidify />

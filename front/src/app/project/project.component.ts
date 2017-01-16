@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 import { Project } from '../shared';
-import { ProjectsService } from '../projects.service';
 
 
 @Component({
@@ -14,8 +13,7 @@ export class ProjectComponent implements OnInit {
 
   private project: Project;
 
-  constructor(private route: ActivatedRoute,
-              private projectsService: ProjectsService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.data.subscribe((data: { project: Project }) => {

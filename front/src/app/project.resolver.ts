@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, Router } from '@angular/router';
-import { Observable } from 'rxjs/Rx';
 
 import { ProjectsService } from './projects.service';
 import { Project } from './shared';

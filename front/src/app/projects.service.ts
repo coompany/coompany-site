@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, Observer } from 'rxjs/Rx';
 
 import { Project } from './shared';
 
@@ -30,15 +29,6 @@ export class ProjectsService {
       else
         reject(`Unable to find desired project: ${prefix}`);
     })
-    // return Observable.create((observer: Observer<Project>) => {
-    //   let project = this.projects.find(p => p.prefix === prefix);
-    //   if (project) {
-    //     observer.next(project);
-    //   } else {
-    //     observer.error(`Unable to find desired project: ${prefix}`);
-    //   }
-    //   observer.complete();
-    // })
   }
 
 }

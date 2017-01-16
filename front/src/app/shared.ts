@@ -21,6 +21,10 @@ export class Project {
     this.text2 = prefix + '.text2';
     this.text3 = prefix + '.text3';
   }
+
+  get imgBigUrl(): string {
+    return `url(${this.imgBig})`;
+  }
 }
 
 export type Client = { name: string, img: string, href: string }

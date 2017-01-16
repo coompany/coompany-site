@@ -11,4 +11,8 @@
     margin-bottom: $interspace;
   }
 
+  .project-img-fluid {
+    @include make-fluid;
+  }
+
 }

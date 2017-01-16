@@ -1,0 +1,14 @@
+@import "../../variables";
+
+
+:host {
+
+  h2 {
+    margin-top: $interspace;
+  }
+  h3 {
+    font-size: smaller;
+    margin-bottom: $interspace;
+  }
+
+}

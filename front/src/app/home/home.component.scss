@@ -1,8 +1,6 @@
 @import "../../variables";
 
 
-$space: 40px;
-
 :host {
 
   #home-jumbo {
@@ -13,19 +11,15 @@ $space: 40px;
   }
 
   h3 {
-    margin: $space 0;
-  }
-
-  img.img-divider {
-    margin: $space 0;
+    margin: $interspace 0;
   }
 
   .client-col {
-    margin-bottom: $space;
+    margin-bottom: $interspace;
   }
 
   .contacts-row {
-    margin-top: $space;
+    margin-top: $interspace;
   }
 
   span {
@@ -38,8 +32,8 @@ $space: 40px;
   }
 
   #they-tell-card {
-    margin-top: $space / 2;
-    margin-bottom: $space;
+    margin-top: $interspace / 2;
+    margin-bottom: $interspace;
     font-family: "Roboto Mono";
     .card-header {
       text-align: center;
@@ -54,7 +48,7 @@ $space: 40px;
 
   #join-us {
     form .row:last-of-type {
-      margin-top: $space;
+      margin-top: $interspace;
     }
     .form-control {
       border-width: 0;
@@ -63,7 +57,7 @@ $space: 40px;
   }
 
   hr:last-of-type {
-    margin-top: $space * 2;
+    margin-top: $interspace * 2;
   }
 
 }

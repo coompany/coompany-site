@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Project, Client } from '../shared';
 import { TranslateService } from '../translate';
+import { ProjectsService } from '../projects.service';
 
 
 declare let jQuery: any;
@@ -13,11 +14,7 @@ declare let jQuery: any;
 })
 export class HomeComponent implements OnInit {
 
-  private projects: [Project] = [
-    new Project('coo2plan', 'http://placehold.it/550x450'),
-    new Project('sos', 'http://placehold.it/550x450'),
-    new Project('coo2plan', 'http://placehold.it/550x450')
-  ]
+  private projects: [Project]
 
   private clients: [Client] = [
     { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
@@ -49,9 +46,11 @@ export class HomeComponent implements OnInit {
 
   public joinSendTxt: string = 'home.join.send';
 
-  constructor(private translateService: TranslateService) { }
+  constructor(private translateService: TranslateService,
+              private projectsService: ProjectsService) { }
 
   ngOnInit() {
+    this.projects = this.projectsService.getProjects();
     jQuery(document).ready(() => {
       this.doTypedQuotes();
     });

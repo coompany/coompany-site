@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-12">
+    <img [src]="project.imgBig" style="max-height: 400px" coomFluidify />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h2 class="text-center">{{ project.name | translate }}</h2>
+    <h3 class="text-center text-muted">{{ project.subtitle | translate }}</h3>
+    <p>{{ project.text1 | translate }}</p>
+    <img class="img-fluid img-divider" [src]="project.img1" />
+    <p>{{ project.text2 | translate }}</p>
+    <img class="img-fluid img-divider" [src]="project.img2" />
+    <img class="img-fluid img-divider" [src]="project.img3" />
+    <p>{{ project.text3 | translate }}</p>
+  </div>
+</div>
+
+<hr coomFluidify />
+
+<div class="row">
+  <div class="col-12">
+    <h3 class="text-center">{{ 'projects.signup.title' | translate }}</h3>
+    <form>
+      <div class="form-group">
+        <div class="row justify-content-center">
+          <label class="col-sm-8 col-form-label text-center" for="signup-email">
+            {{ 'projects.signup.label' | translate }}
+          </label>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+            <input type="email" required name="signup-email" id="signup-email" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-lg btn-outline-primary">
+          {{ 'projects.signup.btn' | translate }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<hr coomFluidify />

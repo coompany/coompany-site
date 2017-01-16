@@ -10,8 +10,11 @@ import { HomeComponent } from './home/home.component';
 import { TRANSLATION_PROVIDERS, TranslateService, TranslatePipe } from './translate';
 import { FooterComponent } from './footer/footer.component';
 import { FluidifyDirective } from './fluidify.directive';
-import { ProjectComponent } from './home/project/project.component';
+import { HomeProjectComponent } from './home/project/project.component';
 import { JournalComponent, JournalService } from './journal';
+import { ProjectComponent } from './project/project.component';
+import { ProjectsService } from './projects.service';
+import { ProjectResolver } from './project.resolver';
 
 
 @NgModule({
@@ -22,8 +25,9 @@ import { JournalComponent, JournalService } from './journal';
     TranslatePipe,
     FooterComponent,
     FluidifyDirective,
-    ProjectComponent,
-    JournalComponent
+    HomeProjectComponent,
+    JournalComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { JournalComponent, JournalService } from './journal';
   ],
   providers: [
     TRANSLATION_PROVIDERS, TranslateService,
-    JournalService
+    JournalService, ProjectsService, ProjectResolver
   ],
   bootstrap: [AppComponent]
 })

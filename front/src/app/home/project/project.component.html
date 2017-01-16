@@ -1,12 +1,12 @@
 <div class="row home-project">
   <div class="col-6">
-    <img class="img-fluid" [src]="project.img" />
+    <img class="img-fluid" [src]="project.imgHome" />
   </div>
   <div class="col-6">
     <h4>{{ project.name | translate }}</h4>
     <h6>{{ project.subtitle | translate }}</h6>
     <p>{{ project.summary | translate }}</p>
-    <a [routerLink]="['projects', project.prefix]" class="btn btn-outline-primary">
+    <a [routerLink]="['/projects', project.prefix]" class="btn btn-outline-primary">
       {{ 'home.projects.more' | translate }}
     </a>
   </div>

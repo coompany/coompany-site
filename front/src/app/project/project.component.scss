@@ -3,16 +3,27 @@
 
 :host {
 
-  h2 {
+  h2, h4 {
     margin-top: $interspace;
   }
-  h3 {
-    font-size: smaller;
+  h3, h4 {
     margin-bottom: $interspace;
   }
 
   .project-img-fluid {
     @include make-fluid;
+  }
+
+  form {
+    text-align: center;
+    input {
+      border-width: 0;
+      text-align: center;
+    }
+    button[type="submit"] {
+      width: 180px;
+      margin-top: $interspace;
+    }
   }
 
 }

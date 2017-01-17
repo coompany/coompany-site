@@ -54,6 +54,14 @@ export const LANG_EN_VALUES = {
   'sos.summary': `We are an independent digital agency.
     We create your websites and mobile applications from`,
 
+  'projects.signup.title': 'Sign Up',
+  'projects.signup.label': 'Your e-mail',
+  'projects.signup.placeholder': 'example@mail.com',
+  'projects.signup.btn.signup': 'Submit',
+  'projects.signup.btn.signing': 'Submitting...',
+  'projects.signup.btn.failed': 'Failed...',
+  'projects.signup.btn.signed': 'Submitted',
+
   'footer.sitemap.title': 'Site map:',
   'footer.findus.title': 'Find us on:',
   'footer.hear.title': 'We\'d love to hear from you:',

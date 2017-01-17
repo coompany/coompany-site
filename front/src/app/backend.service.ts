@@ -3,6 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
 import { environment } from '../environments/environment';
+import { Project } from './shared';
 
 
 @Injectable()
@@ -11,10 +12,21 @@ export class BackendService {
   constructor(private http: Http) { }
 
   public sendEmail(address: string, message: string): Observable<void> {
-    return this.http.post(`${environment.backend.url}/joinus`, {
+    return this.requestVoid(`${environment.backend.url}/joinus`, {
       email: address,
       body: message
-    }).map(response => {}).catch(this.handleError);
+    });
+  }
+
+  public signup(address: string, project: Project): Observable<void> {
+    return this.requestVoid(`${environment.backend.url}/signup`, {
+      email: address,
+      project: project.prefix
+    });
+  }
+
+  private requestVoid(url: string, data: {}, method: string = 'post'): Observable<void> {
+    return this.http[method](url, data).map(response => {}).catch(this.handleError);
   }
 
   private handleError(error: Response | any) {

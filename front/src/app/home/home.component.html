@@ -54,29 +54,32 @@
     <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
     <p [innerHTML]="'home.contacts.text' | translate"></p>
     <div class="row contacts-row">
-      <div class="col-6">
+      <div class="col-md-6">
         <img class="img-fluid mx-auto d-block" src="http://placehold.it/350x300" />
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <p>
           Coompany s.r.l.s.<br />
           Via Abate Gimma 248, 70100, Bari, {{ 'italy' | translate }}<br />
           {{ 'btw' | translate }}: 00000000000<br />
           <br />
           {{ 'tel' | translate }}:
-          <a href="tel:+3100000000000" target="_blank">+3100000000000</a><br />
+          <a href="tel:+3100000000000" target="_blank"
+            class="contacts-magenta">+3100000000000</a><br />
           {{ 'info' | translate }}:
-          <a href="mailto:info@coompany.eu" target="_blank">info@coompany.eu</a><br />
+          <a href="mailto:info@coompany.eu" target="_blank"
+            class="contacts-orange">info@coompany.eu</a><br />
           {{ 'assistance' | translate }}:
-          <a href="mailto:assistance@coompany.eu" target="_blank">assistance@coompany.eu</a>
+          <a href="mailto:assistance@coompany.eu" target="_blank"
+            class="contacts-cyan">assistance@coompany.eu</a>
         </p>
       </div>
     </div>
     <div class="row contacts-row">
-      <div class="col-2">
+      <div class="col-4 col-md-2">
         <img src="http://placehold.it/100x100" class="rounded-circle" />
       </div>
-      <div class="col-4">
+      <div class="col-8 col-md-4">
         <div>{{ 'venice' | translate }}</div>
         <div>
           {{ 'now' | translate }}:
@@ -87,15 +90,17 @@
         <br />
         <div [innerHTML]="'home.contacts.hours' | translate"></div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <h5>Team</h5>
         <p>
           Vittorio Netti, CEO &amp; Founder<br />
-          <a href="mailto:v.netti@coompany.eu" target="_blank">v.netti@coompany.eu</a>
+          <a href="mailto:v.netti@coompany.eu" target="_blank"
+            class="contacts-orange">v.netti@coompany.eu</a>
         </p>
         <p>
           Andrea Jemmett, CTO &amp; Founder<br />
-          <a href="mailto:a.jemmett@coompany.eu" target="_blank">a.jemmett@coompany.eu</a>
+          <a href="mailto:a.jemmett@coompany.eu" target="_blank"
+             class="contacts-orange">a.jemmett@coompany.eu</a>
         </p>
       </div>
     </div>

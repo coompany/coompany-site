@@ -13,13 +13,21 @@ export class FluidifyDirective {
     nel.style.left = `-${this.leftSpacing}px`;
   }
 
+  private static getComputedProp(prop: string): number {
+    const value = parseInt(getComputedStyle(jQuery('.container')[1])[prop]);
+    return isNaN(value) ? 0 : value;
+  }
+
   get containerWidth(): number {
-    return parseInt(getComputedStyle(jQuery('.container')[0]).width);
+    return FluidifyDirective.getComputedProp('width');
+  }
+
+  get containerPaddingLeft(): number {
+    return FluidifyDirective.getComputedProp('paddingLeft');
   }
 
   get leftSpacing(): number {
-    // dunno why the 15 is needed
-    return (window.innerWidth - this.containerWidth) / 2 + 15;
+    return (window.innerWidth - this.containerWidth) / 2 + this.containerPaddingLeft;
   }
 
 }

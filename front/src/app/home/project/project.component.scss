@@ -4,6 +4,12 @@
 .home-project {
   margin-top: 40px;
 
+  @media (max-width: map-get($grid-breakpoints, 'md')) {
+    .project-name {
+      margin-top: $interspace / 2;
+    }
+  }
+
   .project-read-more {
     color: $gray-light;
     font-size: 14px;

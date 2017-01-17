@@ -1,11 +1,11 @@
 <div class="row home-project">
-  <div class="col-6">
+  <div class="col-md-6">
     <a [routerLink]="['/projects', project.prefix]">
       <img class="img-fluid" [src]="project.imgHome" />
     </a>
   </div>
-  <div class="col-6">
-    <h4>
+  <div class="col-md-6">
+    <h4 class="project-name">
       <a [routerLink]="['/projects', project.prefix]">
         {{ project.name | translate }}
       </a>

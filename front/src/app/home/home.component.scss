@@ -66,4 +66,24 @@
     margin-top: $interspace * 2;
   }
 
+  @media (max-width: map-get($grid-breakpoints, 'md')) {
+    .contacts-row {
+      font-size: 1em;
+      line-height: 1.2em;
+      word-wrap: break-word;
+      & > div {
+        margin-top: $interspace;
+      }
+      .contacts-magenta {
+        color: rgb(213, 0, 249);
+      }
+      .contacts-orange {
+        color: $brand-primary;
+      }
+      .contacts-cyan {
+        color: rgb(0, 176, 255);
+      }
+    }
+  }
+
 }

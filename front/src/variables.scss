@@ -1,6 +1,8 @@
 @import '~bootstrap/scss/_variables.scss';
 
-// bootstrap varibles
+$interspace: 40px;
+$coom-orange: rgb(255, 202, 40);
+
 $font-family-base: "Founders Grotesk Text";
 $grid-breakpoints: (
   xs: 0,
@@ -17,10 +19,8 @@ $container-max-widths: (
 );
 $link-color: $body-color;
 $link-hover-color: darken($link-color, 15%);
+$brand-primary: $coom-orange;
 
-// custom variables
-$interspace: 40px;
-$coom-orange: rgb(255, 202, 40);
 
 // mixins
 @mixin make-fluid($height: 400px) {

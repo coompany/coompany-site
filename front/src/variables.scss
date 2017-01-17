@@ -20,9 +20,41 @@ $link-hover-color: darken($link-color, 15%);
 
 // custom variables
 $interspace: 40px;
+$coom-orange: rgb(255, 202, 40);
 
 // mixins
 @mixin make-fluid($height: 400px) {
   background-position: center;
   min-height: $height;
+}
+
+@mixin button-outline-coom-variant($color, $color-hover: #fff) {
+  color: $color;
+  background-image: none;
+  background-color: transparent;
+  border-color: $color;
+
+  @include hover {
+    color: $color-hover;
+    border-color: $color-hover;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 2px rgba($color, .5);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    color: $color-hover;
+    border-color: $color-hover;
+  }
 }

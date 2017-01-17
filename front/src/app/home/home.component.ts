@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
 
   public joinBtn = {
     text: 'home.join.send',
-    class: 'btn-outline-primary',
+    class: 'btn-outline-coom-primary',
     sent: false,
     model: {
       address: '',
@@ -96,7 +96,7 @@ export class HomeComponent implements OnInit {
   private restoreEmail() {
     this.joinBtn = {
       text: 'home.join.send',
-      class: 'btn-outline-primary',
+      class: 'btn-outline-coom-primary',
       sent: false,
       model: {
         address: '',
@@ -107,19 +107,19 @@ export class HomeComponent implements OnInit {
 
   sendEmail() {
     this.joinBtn.text = 'home.join.sending';
-    this.joinBtn.class = 'btn-outline-primary';
+    this.joinBtn.class = 'btn-outline-coom-primary';
 
     const delay = 3000;
     let obs = this.backendService.sendEmail(this.joinBtn.model.address, this.joinBtn.model.message);
 
     obs.subscribe(() => {
       this.joinBtn.text = 'home.join.sent';
-      this.joinBtn.class = 'btn-outline-success';
+      this.joinBtn.class = 'btn-outline-coom-success';
       this.joinBtn.sent = true;
       window.setTimeout(() => { this.restoreEmail() }, delay);
     }, err => {
       this.joinBtn.text = 'home.join.error';
-      this.joinBtn.class = 'btn-outline-danger';
+      this.joinBtn.class = 'btn-outline-coom-danger';
       this.joinBtn.sent = true;
       console.error(err);
       window.setTimeout(() => { this.restoreEmail() }, delay);

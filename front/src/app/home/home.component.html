@@ -9,7 +9,7 @@
   </div>
 </section>
 
-<section class="row">
+<section class="row" id="what-we-do">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
     <p [innerHTML]="'home.what.text' | translate"></p>
@@ -20,7 +20,7 @@
 
 <hr coomFluidify />
 
-<section class="row">
+<section class="row" id="projects">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
     <div class="row" *ngFor="let project of projects">
@@ -33,12 +33,12 @@
 
 <hr coomFluidify />
 
-<section class="row">
+<section class="row" id="clients">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
     <div class="row">
       <div class="col-4 client-col" *ngFor="let client of clients">
-        <a [href]="client.href" [title]="client.name">
+        <a [href]="client.href" [title]="client.name" target="_blank">
           <img class="img-fluid" [src]="client.img" [alt]="client.name">
         </a>
       </div>
@@ -48,7 +48,7 @@
 
 <hr coomFluidify />
 
-<section class="row">
+<section class="row" id="contacts">
   <div class="col-12">
     <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
     <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
@@ -63,9 +63,12 @@
           Via Abate Gimma 248, 70100, Bari, {{ 'italy' | translate }}<br />
           {{ 'btw' | translate }}: 00000000000<br />
           <br />
-          {{ 'tel' | translate }}: <a href="tel:+3100000000000">+3100000000000</a><br />
-          {{ 'info' | translate }}: <a href="mailto:info@coompany.eu">info@coompany.eu</a><br />
-          {{ 'assistance' | translate }}: <a href="mailto:assistance@coompany.eu">assistance@coompany.eu</a>
+          {{ 'tel' | translate }}:
+          <a href="tel:+3100000000000" target="_blank">+3100000000000</a><br />
+          {{ 'info' | translate }}:
+          <a href="mailto:info@coompany.eu" target="_blank">info@coompany.eu</a><br />
+          {{ 'assistance' | translate }}:
+          <a href="mailto:assistance@coompany.eu" target="_blank">assistance@coompany.eu</a>
         </p>
       </div>
     </div>
@@ -88,11 +91,11 @@
         <h5>Team</h5>
         <p>
           Vittorio Netti, CEO &amp; Founder<br />
-          <a href="mailto:v.netti@coompany.eu">v.netti@coompany.eu</a>
+          <a href="mailto:v.netti@coompany.eu" target="_blank">v.netti@coompany.eu</a>
         </p>
         <p>
           Andrea Jemmett, CTO &amp; Founder<br />
-          <a href="mailto:a.jemmett@coompany.eu">a.jemmett@coompany.eu</a>
+          <a href="mailto:a.jemmett@coompany.eu" target="_blank">a.jemmett@coompany.eu</a>
         </p>
       </div>
     </div>

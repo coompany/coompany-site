@@ -70,6 +70,7 @@ export const LANG_EN_VALUES = {
   'footer.sitemap.projects': 'Projects',
   'footer.sitemap.clients': 'Clients',
   'footer.sitemap.journal': 'Journal',
+  'footer.sitemap.contacts': 'Contacts',
   'footer.sitemap.join': 'Join us',
   'footer.text': 'Coompany s.r.l.s. Italy. All rights reserverd.',
 

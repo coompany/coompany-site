@@ -17,6 +17,5 @@ $app->get('/', function () use ($app) {
 });
 
 $app->post('/joinus', [
-    'middleware' => 'auth',
     'uses' => 'JoinUsController@send_email'
 ]);

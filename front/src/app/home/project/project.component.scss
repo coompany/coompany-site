@@ -3,4 +3,13 @@
 
 .home-project {
   margin-top: 40px;
+
+  .project-read-more {
+    color: $gray-light;
+    font-size: 14px;
+    &:hover,
+    &:active {
+      color: rgb(64, 196, 255);
+    }
+  }
 }

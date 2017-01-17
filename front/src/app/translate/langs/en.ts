@@ -14,7 +14,7 @@ export const LANG_EN_VALUES = {
     criteria in order to make browsing as easy as intuitive and offer an attractive
     and optimal consultation experience for users.`,
   'home.projects.title': 'Selected Projects',
-  'home.projects.more': 'Read more',
+  'home.projects.more': 'Read more...',
   'home.clients.title': 'Clients',
   'home.contacts.title': 'Contacts',
   'home.contacts.text': `

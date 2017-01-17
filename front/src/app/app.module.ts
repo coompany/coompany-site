@@ -15,6 +15,7 @@ import { JournalComponent, JournalService } from './journal';
 import { ProjectComponent } from './project/project.component';
 import { ProjectsService } from './projects.service';
 import { ProjectResolver } from './project.resolver';
+import { BackendService } from './backend.service';
 
 
 @NgModule({
@@ -36,7 +37,7 @@ import { ProjectResolver } from './project.resolver';
     AppRoutingModule
   ],
   providers: [
-    TRANSLATION_PROVIDERS, TranslateService,
+    TRANSLATION_PROVIDERS, TranslateService, BackendService,
     JournalService, ProjectsService, ProjectResolver
   ],
   bootstrap: [AppComponent]

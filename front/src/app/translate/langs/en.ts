@@ -42,6 +42,8 @@ export const LANG_EN_VALUES = {
   'home.join.address.placeholder': 'email@example.com',
   'home.join.send': 'Send',
   'home.join.sent': 'Sent',
+  'home.join.sending': 'Sending...',
+  'home.join.error': 'Failed...',
 
   'coo2plan.name': 'Coo2plan',
   'coo2plan.subtitle': 'Web based platform',

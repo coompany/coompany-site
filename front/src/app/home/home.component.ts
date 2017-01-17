@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project, Client } from '../shared';
 import { TranslateService } from '../translate';
 import { ProjectsService } from '../projects.service';
+import { BackendService } from '../backend.service';
 
 
 declare let jQuery: any;
@@ -44,10 +45,19 @@ export class HomeComponent implements OnInit {
     'home.quotes.4'
   ]
 
-  public joinSendTxt: string = 'home.join.send';
+  public joinBtn = {
+    text: 'home.join.send',
+    class: 'btn-outline-primary',
+    sent: false,
+    model: {
+      address: '',
+      message: ''
+    }
+  }
 
   constructor(private translateService: TranslateService,
-              private projectsService: ProjectsService) { }
+              private projectsService: ProjectsService,
+              private backendService: BackendService) { }
 
   ngOnInit() {
     this.projects = this.projectsService.getProjects();
@@ -81,6 +91,39 @@ export class HomeComponent implements OnInit {
       ) &&
       (h <= this.openingHours.hours.end.h ||
         (h === this.openingHours.hours.end.h && m <= this.openingHours.hours.end.m));
+  }
+
+  private restoreEmail() {
+    this.joinBtn = {
+      text: 'home.join.send',
+      class: 'btn-outline-primary',
+      sent: false,
+      model: {
+        address: '',
+        message: ''
+      }
+    };
+  }
+
+  sendEmail() {
+    this.joinBtn.text = 'home.join.sending';
+    this.joinBtn.class = 'btn-outline-primary';
+
+    const delay = 3000;
+    let obs = this.backendService.sendEmail(this.joinBtn.model.address, this.joinBtn.model.message);
+
+    obs.subscribe(() => {
+      this.joinBtn.text = 'home.join.sent';
+      this.joinBtn.class = 'btn-outline-success';
+      this.joinBtn.sent = true;
+      window.setTimeout(() => { this.restoreEmail() }, delay);
+    }, err => {
+      this.joinBtn.text = 'home.join.error';
+      this.joinBtn.class = 'btn-outline-danger';
+      this.joinBtn.sent = true;
+      console.error(err);
+      window.setTimeout(() => { this.restoreEmail() }, delay);
+    });
   }
 
 }

@@ -16,7 +16,7 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/protected', [
+$app->post('/joinus', [
     'middleware' => 'auth',
-    'uses' => 'ExampleController@protected_action'
+    'uses' => 'JoinUsController@send_email'
 ]);

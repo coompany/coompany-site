@@ -19,3 +19,7 @@ $app->get('/', function () use ($app) {
 $app->post('/joinus', [
     'uses' => 'JoinUsController@send_email'
 ]);
+
+$app->post('/signup', [
+    'uses' => 'ProjectsController@signup'
+]);

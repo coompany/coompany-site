@@ -16,9 +16,14 @@
 
   form {
     text-align: center;
+    margin-bottom: $interspace;
     input {
       border-width: 0;
       text-align: center;
+      color: rgb(158, 158, 158);
+      background-color: rgb(245, 245, 245);
+      font-size: 0.8em;
+      margin-top: $interspace;
     }
     button[type="submit"] {
       width: 180px;

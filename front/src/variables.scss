@@ -36,7 +36,8 @@ $brand-primary: $coom-orange;
 
   @include hover {
     color: $color-hover;
-    border-color: $color-hover;
+    border-color: $color;
+    background-color: $color;
   }
 
   &:focus,
@@ -55,6 +56,7 @@ $brand-primary: $coom-orange;
   &.active,
   .show > &.dropdown-toggle {
     color: $color-hover;
-    border-color: $color-hover;
+    border-color: $color;
+    background-color: $color;
   }
 }

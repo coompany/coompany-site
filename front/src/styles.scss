@@ -65,7 +65,7 @@ body {
   }
 
   .btn.btn-outline-coom-primary {
-    @include button-outline-coom-variant($gray-light, $coom-orange);
+    @include button-outline-coom-variant($coom-orange);
   }
   .btn.btn-outline-coom-secondary {
     @include button-outline-coom-variant($btn-secondary-border, lighten($btn-secondary-border, 20%));

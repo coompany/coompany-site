@@ -1,154 +1,162 @@
-<section id="home-jumbo" coomFluidify>
+<section id="home-jumbo">
   <div class="container">
-    <h2 class="text-center" [innerHTML]="'home.jumbo' | translate"></h2>
-    <div class="text-center">
-      <a class="btn btn-outline-coom-primary btn-lg" href="#">
-        {{ 'home.jumbo.btn' | translate }}
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="row" id="what-we-do">
-  <div class="col-12">
-    <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
-    <p [innerHTML]="'home.what.text' | translate"></p>
-    <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
-    <p [innerHTML]="'home.what.text' | translate"></p>
-  </div>
-</section>
-
-<hr coomFluidify />
-
-<section class="row" id="projects">
-  <div class="col-12">
-    <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
-    <div class="row" *ngFor="let project of projects">
-      <div class="col-12">
-        <app-home-project [project]="project"></app-home-project>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr coomFluidify />
-
-<section class="row" id="clients">
-  <div class="col-12">
-    <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
     <div class="row">
-      <div class="col-4 client-col" *ngFor="let client of clients">
-        <a [href]="client.href" [title]="client.name" target="_blank">
-          <img class="img-fluid" [src]="client.img" [alt]="client.name">
-        </a>
+      <div class="col">
+        <h2 [innerHTML]="'home.jumbo' | translate"></h2>
+        <div>
+          <a class="btn btn-outline-coom-primary btn-lg" href="#">
+            {{ 'home.jumbo.btn' | translate }}
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<hr coomFluidify />
+<div class="container">
 
-<section class="row" id="contacts">
-  <div class="col-12">
-    <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
-    <img class="img-fluid mx-auto d-block img-divider" src="http://placehold.it/800x450" />
-    <p [innerHTML]="'home.contacts.text' | translate"></p>
-    <div class="row contacts-row">
-      <div class="col-md-6">
-        <img class="img-fluid mx-auto d-block" src="http://placehold.it/350x300" />
-      </div>
-      <div class="col-md-6">
-        <p>
-          Coompany s.r.l.s.<br />
-          Via Abate Gimma 248, 70100, Bari, {{ 'italy' | translate }}<br />
-          {{ 'btw' | translate }}: 00000000000<br />
-          <br />
-          {{ 'tel' | translate }}:
-          <a href="tel:+3100000000000" target="_blank"
-            class="contacts-magenta">+3100000000000</a><br />
-          {{ 'info' | translate }}:
-          <a href="mailto:info@coompany.eu" target="_blank"
-            class="contacts-orange">info@coompany.eu</a><br />
-          {{ 'assistance' | translate }}:
-          <a href="mailto:assistance@coompany.eu" target="_blank"
-            class="contacts-cyan">assistance@coompany.eu</a>
-        </p>
-      </div>
+  <section class="row" id="what-we-do">
+    <div class="col-12">
+      <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
+      <p [innerHTML]="'home.what.text' | translate"></p>
+      <img class="img-fluid mx-auto d-block img-divider" src="/assets/images/coompany_what.jpg" />
+      <p [innerHTML]="'home.what.text' | translate"></p>
     </div>
-    <div class="row contacts-row">
-      <div class="col-4 col-md-2">
-        <img src="http://placehold.it/100x100" class="rounded-circle" />
-      </div>
-      <div class="col-8 col-md-4">
-        <div>{{ 'venice' | translate }}</div>
-        <div>
-          {{ 'now' | translate }}:
-          <span [ngClass]="{ 'open-status': weOpen, 'closed-status': !weOpen }">
-            {{ openingStatus | translate }}
-          </span>
+  </section>
+
+  <hr />
+
+  <section class="row" id="projects">
+    <div class="col-12">
+      <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
+      <div class="row" *ngFor="let project of projects">
+        <div class="col-12">
+          <app-home-project [project]="project"></app-home-project>
         </div>
-        <br />
-        <div [innerHTML]="'home.contacts.hours' | translate"></div>
-      </div>
-      <div class="col-md-6">
-        <h5>Team</h5>
-        <p>
-          Vittorio Netti, CEO &amp; Founder<br />
-          <a href="mailto:v.netti@coompany.eu" target="_blank"
-            class="contacts-orange">v.netti@coompany.eu</a>
-        </p>
-        <p>
-          Andrea Jemmett, CTO &amp; Founder<br />
-          <a href="mailto:a.jemmett@coompany.eu" target="_blank"
-             class="contacts-orange">a.jemmett@coompany.eu</a>
-        </p>
       </div>
     </div>
-    <div class="row justify-content-md-center contacts-row">
-      <div class="col-10">
-        <div class="card" id="they-tell-card">
-          <h6 class="card-header">{{ 'home.contacts.theytell' | translate }}</h6>
-          <div class="card-block">
-            <p class="card-text quote"></p>
+  </section>
+
+  <hr />
+
+  <section class="row" id="clients">
+    <div class="col-12">
+      <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
+      <div class="row">
+        <div class="col-4 client-col" *ngFor="let client of clients">
+          <a [href]="client.href" [title]="client.name" target="_blank">
+            <img class="img-fluid" [src]="client.img" [alt]="client.name">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="row" id="contacts">
+    <div class="col-12">
+      <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
+      <p [innerHTML]="'home.contacts.text' | translate"></p>
+      <img class="img-fluid mx-auto d-block img-divider" src="/assets/images/coompany_who.jpg" />
+      <div class="row contacts-row">
+        <div class="col-md-6">
+          <img class="img-fluid mx-auto d-block" src="http://placehold.it/350x300" />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Coompany s.r.l.s.<br />
+            Via Abate Gimma 248, 70100, Bari, {{ 'italy' | translate }}<br />
+            {{ 'btw' | translate }}: 00000000000<br />
+            <br />
+            {{ 'tel' | translate }}:
+            <a href="tel:+3100000000000" target="_blank"
+              class="contacts-magenta">+3100000000000</a><br />
+            {{ 'info' | translate }}:
+            <a href="mailto:info@coompany.eu" target="_blank"
+              class="contacts-orange">info@coompany.eu</a><br />
+            {{ 'assistance' | translate }}:
+            <a href="mailto:assistance@coompany.eu" target="_blank"
+              class="contacts-cyan">assistance@coompany.eu</a>
+          </p>
+        </div>
+      </div>
+      <div class="row contacts-row">
+        <div class="col-4 col-md-2">
+          <img src="http://placehold.it/100x100" class="rounded-circle" />
+        </div>
+        <div class="col-8 col-md-4">
+          <div>{{ 'venice' | translate }}</div>
+          <div>
+            {{ 'now' | translate }}:
+            <span [ngClass]="{ 'open-status': weOpen, 'closed-status': !weOpen }">
+              {{ openingStatus | translate }}
+            </span>
+          </div>
+          <br />
+          <div [innerHTML]="'home.contacts.hours' | translate"></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Team</h5>
+          <p>
+            Vittorio Netti, CEO &amp; Founder<br />
+            <a href="mailto:v.netti@coompany.eu" target="_blank"
+              class="contacts-orange">v.netti@coompany.eu</a>
+          </p>
+          <p>
+            Andrea Jemmett, CTO &amp; Founder<br />
+            <a href="mailto:a.jemmett@coompany.eu" target="_blank"
+               class="contacts-orange">a.jemmett@coompany.eu</a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-md-center contacts-row">
+        <div class="col-10">
+          <div class="card" id="they-tell-card">
+            <h6 class="card-header">{{ 'home.contacts.theytell' | translate }}</h6>
+            <div class="card-block">
+              <p class="card-text quote"></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<hr coomFluidify />
+  <hr />
 
-<section class="row" id="join-us">
-  <div class="col-12">
-    <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
-    <form #joinForm="ngForm" (ngSubmit)="sendEmail()">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label for="input-message">
-            {{ 'home.join.message.label' | translate }}
-          </label>
-          <textarea required name="input-message" id="input-message" class="form-control"
-            rows="8" [placeholder]="'home.join.message.placeholder' | translate"
-            [(ngModel)]="joinBtn.model.message"></textarea>
+  <section class="row" id="join-us">
+    <div class="col-12">
+      <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
+      <form #joinForm="ngForm" (ngSubmit)="sendEmail()">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <label for="input-message">
+              {{ 'home.join.message.label' | translate }}
+            </label>
+            <textarea required name="input-message" id="input-message" class="form-control"
+              rows="8" [placeholder]="'home.join.message.placeholder' | translate"
+              [(ngModel)]="joinBtn.model.message"></textarea>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label for="input-address">
+              {{ 'home.join.address.label' | translate }}
+            </label>
+            <input type="email" required name="input-address" id="input-address" class="form-control"
+              [placeholder]="'home.join.address.placeholder' | translate"
+              [(ngModel)]="joinBtn.model.address" />
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <label for="input-address">
-            {{ 'home.join.address.label' | translate }}
-          </label>
-          <input type="email" required name="input-address" id="input-address" class="form-control"
-            [placeholder]="'home.join.address.placeholder' | translate"
-            [(ngModel)]="joinBtn.model.address" />
+        <div class="row form-group">
+          <div class="col-12 text-center">
+            <button [disabled]="joinBtn.sent || joinForm.invalid" id="join-btn"
+              type="submit" class="btn btn-lg" [ngClass]="joinBtn.class">
+              {{ joinBtn.text | translate }}
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="row form-group">
-        <div class="col-12 text-center">
-          <button [disabled]="joinBtn.sent || joinForm.invalid" id="join-btn"
-            type="submit" class="btn btn-lg" [ngClass]="joinBtn.class">
-            {{ joinBtn.text | translate }}
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
+      </form>
+    </div>
+  </section>
+
+</div>

@@ -4,9 +4,27 @@
 :host {
 
   #home-jumbo {
-    background-image: url(http://placehold.it/1200x800?text=+);
-    @include make-fluid;
-    padding: 100px 0;
+    background-color: rgb(245, 245, 245);
+    padding-top: 60px;
+    .container {
+      background-image: url(assets/images/coompany_intro.jpg);
+      background-position: center 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .row {
+        .col {
+          padding-top: 80px;
+          padding-bottom: 80px;
+          h2 {
+            line-height: 1.4em;
+            max-width: 800px;
+          }
+          .btn {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
   }
 
   h3 {

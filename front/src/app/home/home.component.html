@@ -116,36 +116,12 @@
   <hr />
 
   <section class="row" id="join-us">
-    <div class="col-12">
+    <div class="col-12 text-center">
       <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
-      <form #joinForm="ngForm" (ngSubmit)="sendEmail()">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <label for="input-message">
-              {{ 'home.join.message.label' | translate }}
-            </label>
-            <textarea required name="input-message" id="input-message" class="form-control"
-              rows="8" [placeholder]="'home.join.message.placeholder' | translate"
-              [(ngModel)]="joinBtn.model.message"></textarea>
-          </div>
-          <div class="col-sm-6 form-group">
-            <label for="input-address">
-              {{ 'home.join.address.label' | translate }}
-            </label>
-            <input type="email" required name="input-address" id="input-address" class="form-control"
-              [placeholder]="'home.join.address.placeholder' | translate"
-              [(ngModel)]="joinBtn.model.address" />
-          </div>
-        </div>
-        <div class="row form-group">
-          <div class="col-12 text-center">
-            <button [disabled]="joinBtn.sent || joinForm.invalid" id="join-btn"
-              type="submit" class="btn btn-lg" [ngClass]="joinBtn.class">
-              {{ joinBtn.text | translate }}
-            </button>
-          </div>
-        </div>
-      </form>
+      <p>{{ 'home.join.text' | translate }}</p>
+      <a href="mailto:info@coompany.eu" target="_blank" class="btn btn-outline-coom-primary">
+        {{ 'home.join.btn' | translate }}
+      </a>
     </div>
   </section>
 

@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Project, Client } from '../shared';
 import { TranslateService } from '../translate';
 import { ProjectsService } from '../projects.service';
-import { BackendService } from '../backend.service';
 
 
 declare let jQuery: any;
@@ -29,15 +28,6 @@ export class HomeComponent implements OnInit {
     { name: 'Client', img: 'http://placehold.it/350x300', href: '#' }
   ]
 
-  private openingHours = {
-    // sunday is 0, monday is 1, ...
-    days: [1, 2, 3, 4, 5],
-    hours: {
-      start: { h: 9, m: 0 },
-      end: { h: 18, m: 0 }
-    }
-  }
-
   private quotes: [string] = [
     'home.quotes.1',
     'home.quotes.2',
@@ -45,19 +35,8 @@ export class HomeComponent implements OnInit {
     'home.quotes.4'
   ]
 
-  public joinBtn = {
-    text: 'home.join.send',
-    class: 'btn-outline-coom-primary',
-    sent: false,
-    model: {
-      address: '',
-      message: ''
-    }
-  }
-
   constructor(private translateService: TranslateService,
-              private projectsService: ProjectsService,
-              private backendService: BackendService) { }
+              private projectsService: ProjectsService) { }
 
   ngOnInit() {
     this.projects = this.projectsService.getProjects();
@@ -73,56 +52,6 @@ export class HomeComponent implements OnInit {
       typeSpeed: 20,
       loop: true,
       backDelay: 3000
-    });
-  }
-
-  get openingStatus(): string {
-    return this.weOpen ? 'open' : 'closed';
-  }
-
-  get weOpen(): boolean {
-    let date = new Date;
-    let h = date.getUTCHours();
-    let m = date.getUTCMinutes();
-
-    return (this.openingHours.days.indexOf(date.getUTCDay()) !== -1) &&
-      (h >= this.openingHours.hours.start.h ||
-        (h === this.openingHours.hours.start.h && m >= this.openingHours.hours.start.m)
-      ) &&
-      (h <= this.openingHours.hours.end.h ||
-        (h === this.openingHours.hours.end.h && m <= this.openingHours.hours.end.m));
-  }
-
-  private restoreEmail() {
-    this.joinBtn = {
-      text: 'home.join.send',
-      class: 'btn-outline-coom-primary',
-      sent: false,
-      model: {
-        address: '',
-        message: ''
-      }
-    };
-  }
-
-  sendEmail() {
-    this.joinBtn.text = 'home.join.sending';
-    this.joinBtn.class = 'btn-outline-coom-primary';
-
-    const delay = 3000;
-    let obs = this.backendService.sendEmail(this.joinBtn.model.address, this.joinBtn.model.message);
-
-    obs.subscribe(() => {
-      this.joinBtn.text = 'home.join.sent';
-      this.joinBtn.class = 'btn-outline-coom-success';
-      this.joinBtn.sent = true;
-      window.setTimeout(() => { this.restoreEmail() }, delay);
-    }, err => {
-      this.joinBtn.text = 'home.join.error';
-      this.joinBtn.class = 'btn-outline-coom-danger';
-      this.joinBtn.sent = true;
-      console.error(err);
-      window.setTimeout(() => { this.restoreEmail() }, delay);
     });
   }
 

@@ -65,19 +65,11 @@
   }
 
   #join-us {
-    form .row:last-of-type {
-      margin-top: $interspace;
+    p {
+      margin-bottom: $interspace;
     }
-    .form-control {
-      border-width: 0;
-      padding: 0;
-    }
-    #join-btn {
-      width: 180px;
-      cursor: pointer;
-      &[disabled] {
-        cursor: default;
-      }
+    .btn {
+      margin-bottom: $interspace;
     }
   }
 

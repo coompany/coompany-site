@@ -6,22 +6,24 @@
             aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" routerLink="home">Coompany</a>
+    <a class="navbar-brand" routerLink="home">
+      <img src="/assets/images/coompany_logo_40px.gif" />
+    </a>
 
     <div class="collapse navbar-collapse justify-content-end align-items-center flex-row"
          id="main-navbar-collapsible">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a [class]="activeNavs.what + ' nav-link'"
-             routerLink="home" fragment="what-we-do">What</a>
+             routerLink="home" fragment="what-we-do">{{ 'navbar.what' | translate }}</a>
         </li>
         <li class="nav-item">
           <a [class]="activeNavs.projects + ' nav-link'"
-             routerLink="home" fragment="projects">Projects</a>
+             routerLink="home" fragment="projects">{{ 'navbar.projects' | translate }}</a>
         </li>
         <li class="nav-item">
           <a [class]="activeNavs.contacts + ' nav-link'"
-             routerLink="home" fragment="contacts">Contacts</a>
+             routerLink="home" fragment="contacts">{{ 'navbar.contacts' | translate }}</a>
         </li>
       </ul>
       <ul class="list-inline mb-0 ml-4">

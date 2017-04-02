@@ -17,15 +17,23 @@ export class HomeComponent implements OnInit {
   private projects: [Project]
 
   private clients: [Client] = [
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' },
-    { name: 'Client', img: 'http://placehold.it/350x300', href: '#' }
+    {
+      name: 'La Scuola Open Source',
+      img: '/assets/images/img_logo_sos.jpg',
+      href: 'http://lascuolaopensource.xyz'
+    }, {
+      name: 'Regione Puglia',
+      img: '/assets/images/regione.jpg',
+      href: 'http://www.regione.puglia.it/'
+    }, {
+      name: 'PechaKucha Venice',
+      img: '/assets/images/logopecha.jpg',
+      href: 'http://www.pechakuchavenezia.org/'
+    }, {
+      name: 'Reactivicity',
+      img: '/assets/images/reactivicity.jpg',
+      href: '#'
+    }
   ]
 
   private quotes: [string] = [

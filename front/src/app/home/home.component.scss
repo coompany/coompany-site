@@ -7,10 +7,9 @@
     background-color: rgb(245, 245, 245);
     padding-top: 60px;
     .container {
-      background-image: url(assets/images/coompany_intro.jpg);
-      background-position: center 100%;
-      background-repeat: no-repeat;
-      background-size: 100%;
+      video {
+        position: absolute;
+      }
       .row {
         .col {
           padding-top: 80px;

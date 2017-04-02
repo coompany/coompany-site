@@ -1,5 +1,6 @@
 <section id="home-jumbo">
   <div class="container">
+    <video class="img-fluid img-divider" src="/assets/animations/intro.mp4" autoplay loop></video>
     <div class="row">
       <div class="col">
         <p [innerHTML]="'home.jumbo' | translate"></p>
@@ -19,7 +20,7 @@
     <div class="col-12">
       <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
       <p [innerHTML]="'home.what.text1' | translate"></p>
-      <img class="img-fluid mx-auto d-block img-divider" src="/assets/images/coompany_what.jpg" />
+      <video class="img-fluid img-divider" src="/assets/animations/what.mp4" autoplay loop></video>
       <p [innerHTML]="'home.what.text2' | translate"></p>
     </div>
   </section>
@@ -43,7 +44,7 @@
     <div class="col-12">
       <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
       <div class="row">
-        <div class="col-4 client-col" *ngFor="let client of clients">
+        <div class="col-3 client-col" *ngFor="let client of clients">
           <a [href]="client.href" [title]="client.name" target="_blank">
             <img class="img-fluid" [src]="client.img" [alt]="client.name">
           </a>
@@ -58,7 +59,7 @@
     <div class="col-12">
       <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
       <p [innerHTML]="'home.contacts.text' | translate"></p>
-      <img class="img-fluid mx-auto d-block img-divider" src="/assets/images/coompany_who.jpg" />
+      <video class="img-fluid img-divider" src="/assets/animations/contacts.mp4" autoplay loop></video>
       <div class="row contacts-row">
         <div class="col-md-6">
           <h5>{{ 'home.contacts.title' | translate }}</h5>

@@ -7,12 +7,9 @@ import { Project } from './shared';
 export class ProjectsService {
 
   private projects: [Project] = [
-    new Project('coo2plan', 'http://placehold.it/550x450', 'http://placehold.it/1200x800?text=+',
-      'http://placehold.it/800x450', 'http://placehold.it/800x450', 'http://placehold.it/800x450'),
-    new Project('sos', 'http://placehold.it/550x450', 'http://placehold.it/1200x800?text=+',
-      'http://placehold.it/800x450', 'http://placehold.it/800x450', 'http://placehold.it/800x450'),
-    new Project('coo2plan', 'http://placehold.it/550x450', 'http://placehold.it/1200x800?text=+',
-      'http://placehold.it/800x450', 'http://placehold.it/800x450', 'http://placehold.it/800x450')
+    new Project('coo2plan', [true, true, false]),
+    new Project('sos'),
+    new Project('pechakucha', [true, true, false])
   ]
 
   constructor() { }

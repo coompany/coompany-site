@@ -16,4 +16,23 @@
     }
   }
 
+  .navbar-brand {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+  }
+
+  #langs-list {
+    li:first-of-type {
+      border-left: 1px solid lighten($gray-light, 30%);
+      padding-left: 8px;
+    }
+    .btn {
+      color: lighten($gray-light, 10%);
+      &.active {
+        color: $gray;
+        font-weight: bold;
+      }
+    }
+  }
+
 }

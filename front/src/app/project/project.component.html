@@ -1,4 +1,6 @@
-<div class="project-img-fluid" [style.backgroundImage]="project.imgBigUrl"></div>
+<div id="project-video">
+  <video class="img-fluid" [src]="project.video" autoplay loop></video>
+</div>
 
 <div class="container">
 
@@ -6,12 +8,12 @@
     <div class="col-12">
       <h2 class="text-center">{{ project.name | translate }}</h2>
       <h3 class="text-center text-muted">{{ project.subtitle | translate }}</h3>
-      <p>{{ project.text1 | translate }}</p>
-      <img class="img-fluid img-divider" [src]="project.img1" />
-      <p>{{ project.text2 | translate }}</p>
-      <img class="img-fluid img-divider" [src]="project.img2" />
-      <img class="img-fluid img-divider" [src]="project.img3" />
-      <p>{{ project.text3 | translate }}</p>
+      <p [innerHTML]="project.text1 | translate"></p>
+      <img *ngIf="project.presentImgs[0]" class="img-fluid img-divider" [src]="project.img1" />
+      <p [innerHTML]="project.text2 | translate"></p>
+      <img *ngIf="project.presentImgs[1]" class="img-fluid img-divider" [src]="project.img2" />
+      <img *ngIf="project.presentImgs[2]" class="img-fluid img-divider" [src]="project.img3" />
+      <p [innerHTML]="project.text3 | translate"></p>
     </div>
   </div>
 
@@ -23,7 +25,7 @@
       <form #signupForm="ngForm" (ngSubmit)="signupToProject()">
         <div class="form-group">
           <div class="row justify-content-center">
-            <p>{{ 'projects.signup.text' | translate }}</p>
+            <p [innerHTML]="project.signupText | translate"></p>
           </div>
           <div class="row justify-content-center">
             <div class="col-sm-8">

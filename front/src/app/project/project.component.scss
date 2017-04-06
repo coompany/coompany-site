@@ -10,8 +10,11 @@
     margin-bottom: $interspace;
   }
 
-  .project-img-fluid {
-    @include make-fluid;
+  #project-video {
+    margin-top: 60px;
+    video {
+      min-width: 100%;
+    }
   }
 
   form {

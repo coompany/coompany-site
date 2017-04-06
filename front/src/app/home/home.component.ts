@@ -19,19 +19,19 @@ export class HomeComponent implements OnInit {
   private clients: [Client] = [
     {
       name: 'La Scuola Open Source',
-      img: '/assets/images/img_logo_sos.jpg',
+      img: '/assets/images/SOS.png',
       href: 'http://lascuolaopensource.xyz'
     }, {
       name: 'Regione Puglia',
-      img: '/assets/images/regione.jpg',
+      img: '/assets/images/puglia.png',
       href: 'http://www.regione.puglia.it/'
     }, {
       name: 'PechaKucha Venice',
-      img: '/assets/images/logopecha.jpg',
+      img: '/assets/images/pecha.png',
       href: 'http://www.pechakuchavenezia.org/'
     }, {
       name: 'Reactivicity',
-      img: '/assets/images/reactivicity.jpg',
+      img: '/assets/images/reactivicity.png',
       href: '#'
     }
   ]

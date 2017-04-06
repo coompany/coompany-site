@@ -22,6 +22,8 @@ export class AppComponent implements OnInit {
           if (element) {
             document.body.scrollTop += element.getBoundingClientRect().top - 60;
           }
+        } else {
+          document.body.scrollTop = 0;
         }
       }
     });

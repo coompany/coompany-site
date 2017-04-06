@@ -11,8 +11,10 @@
   }
 
   .project-read-more {
-    color: $gray-light;
-    font-size: 14px;
+    color: rgb(0, 176, 255);
+    font-size: .8em;
+    line-height: 1em;
+    font-family: 'Roboto Mono';
     &:hover,
     &:active {
       color: rgb(64, 196, 255);

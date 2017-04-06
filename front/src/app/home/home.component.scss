@@ -9,11 +9,12 @@
     .container {
       video {
         position: absolute;
+        top: 30px;
       }
       .row {
         .col {
           padding-top: 80px;
-          padding-bottom: 180px;
+          padding-bottom: 190px;
           p {
             line-height: 1.4em;
             max-width: 800px;
@@ -25,10 +26,6 @@
         }
       }
     }
-  }
-
-  h3 {
-    margin: $interspace 0;
   }
 
   .client-col {

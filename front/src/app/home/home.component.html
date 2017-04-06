@@ -1,11 +1,12 @@
 <section id="home-jumbo">
   <div class="container">
-    <video class="img-fluid img-divider" src="/assets/animations/intro.mp4" autoplay loop></video>
+    <video class="img-fluid" src="/assets/animations/intro.mp4" autoplay loop></video>
     <div class="row">
       <div class="col">
         <p [innerHTML]="'home.jumbo' | translate"></p>
         <div>
-          <a class="btn btn-outline-coom-primary btn-lg" href="#">
+          <a class="btn btn-outline-coom-primary btn-lg"
+             routerLink="/home" fragment="contacts">
             {{ 'home.jumbo.btn' | translate }}
           </a>
         </div>
@@ -18,7 +19,7 @@
 
   <section class="row" id="what-we-do">
     <div class="col-12">
-      <h3 class="text-center">{{ 'home.what.title' | translate }}</h3>
+      <h2 class="text-center">{{ 'home.what.title' | translate }}</h2>
       <p [innerHTML]="'home.what.text1' | translate"></p>
       <video class="img-fluid img-divider" src="/assets/animations/what.mp4" autoplay loop></video>
       <p [innerHTML]="'home.what.text2' | translate"></p>
@@ -29,8 +30,8 @@
 
   <section class="row" id="projects">
     <div class="col-12">
-      <h3 class="text-center">{{ 'home.projects.title' | translate }}</h3>
-      <div class="row" *ngFor="let project of projects">
+      <h2 class="text-center">{{ 'home.projects.title' | translate }}</h2>
+      <div class="row my-3" *ngFor="let project of projects">
         <div class="col-12">
           <app-home-project [project]="project"></app-home-project>
         </div>
@@ -42,7 +43,7 @@
 
   <section class="row justify-content-center" id="clients">
     <div class="col-11">
-      <h3 class="text-center">{{ 'home.clients.title' | translate }}</h3>
+      <h2 class="text-center">{{ 'home.clients.title' | translate }}</h2>
       <div class="row">
         <div class="col-3 client-col" *ngFor="let client of clients">
           <a [href]="client.href" [title]="client.name" target="_blank">
@@ -57,7 +58,7 @@
 
   <section class="row" id="contacts">
     <div class="col-12">
-      <h3 class="text-center">{{ 'home.contacts.title' | translate }}</h3>
+      <h2 class="text-center">{{ 'home.contacts.title' | translate }}</h2>
       <p [innerHTML]="'home.contacts.text' | translate"></p>
       <video class="img-fluid img-divider" src="/assets/animations/contacts.mp4" autoplay loop></video>
       <div class="row contacts-row">
@@ -101,7 +102,7 @@
 
   <section class="row" id="say-about-us">
     <div class="col-12">
-      <h3 class="text-center">{{ 'home.contacts.theytell' | translate }}</h3>
+      <h2 class="text-center">{{ 'home.contacts.theytell' | translate }}</h2>
       <div class="row justify-content-md-center contacts-row">
         <div class="col-10">
           <div class="card" id="they-tell-card">
@@ -118,7 +119,7 @@
 
   <section class="row" id="join-us">
     <div class="col-12 text-center">
-      <h3 class="text-center">{{ 'home.join.title' | translate }}</h3>
+      <h2 class="text-center">{{ 'home.join.title' | translate }}</h2>
       <p>{{ 'home.join.text' | translate }}</p>
       <a href="mailto:info@coompany.eu" target="_blank" class="btn btn-outline-coom-primary">
         {{ 'home.join.btn' | translate }}

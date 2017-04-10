@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { Language } from '../shared';
 
 
@@ -7,15 +8,29 @@ import { Language } from '../shared';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent extends OnInit {
+export class NavbarComponent implements OnInit {
   @Input() supportedLanguages: [Language]
   @Input() selectedLanguageId: number
   @Output() onLangChanged = new EventEmitter<number>()
+  logoUrl = '/assets/images/coompany_logo_40px.gif'
 
   activeNavs = {
     what: '',
     projects: '',
     contacts: ''
+  }
+
+  constructor(router: Router) {
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = router.parseUrl(router.url);
+        if (!tree.fragment) {
+          const tmp = this.logoUrl;
+          this.logoUrl = '';
+          window.setTimeout(() => { this.logoUrl = tmp; }, 0);
+        }
+      }
+    });
   }
 
   changeLanguage(languageId: number) {

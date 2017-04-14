@@ -34,7 +34,7 @@ $brand-primary: $coom-orange;
   background-color: transparent;
   border-color: $color;
   font-family: 'Roboto Mono';
-  font-size: .8em;
+  font-size: .6em;
   line-height: 1em;
   text-align: center;
   padding: 15px;
@@ -47,7 +47,7 @@ $brand-primary: $coom-orange;
 
   &:focus,
   &.focus {
-    box-shadow: 0 0 0 2px rgba($color, .5);
+    box-shadow: none;
   }
 
   &.disabled,

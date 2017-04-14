@@ -23,6 +23,19 @@
 @import "variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+.text-orange {
+  color: $coom-orange;
+}
+
+
+// Clear input placeholder on focus
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
 body {
   font-size: 1.4em;
   font-weight: normal;
@@ -30,12 +43,27 @@ body {
   color: rgb(60, 60, 60);
 
   h2 {
-    font-size: 2.1em;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+
+  h2, h3 {
+    color: rgb(21, 21, 21);
     font-weight: bold;
     line-height: 1em;
-    color: rgb(21, 21, 21);
     text-align: center;
+  }
+
+  h3 {
     margin: $interspace 0;
+  }
+
+  #project-content {
+    ul, ol {
+      margin: 1.6rem 0 2rem 0;
+    }
   }
 
   .typed-cursor{

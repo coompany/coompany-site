@@ -10,9 +10,20 @@
     }
   }
 
+  .project-name {
+    text-align: left;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
   .project-read-more {
     color: rgb(0, 176, 255);
-    font-size: .8em;
+    font-size: .6em;
     line-height: 1em;
     font-family: 'Roboto Mono';
     &:hover,

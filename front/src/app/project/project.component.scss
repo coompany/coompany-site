@@ -3,13 +3,6 @@
 
 :host {
 
-  h2, h4 {
-    margin-top: $interspace;
-  }
-  h3, h4 {
-    margin-bottom: $interspace;
-  }
-
   #project-video {
     margin-top: 60px;
     video {
@@ -27,6 +20,7 @@
       background-color: rgb(245, 245, 245);
       font-size: 0.8em;
       margin-top: $interspace;
+      font-family: 'Roboto Mono';
     }
     button[type="submit"] {
       width: 180px;

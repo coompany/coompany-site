@@ -4,10 +4,10 @@
 
 <div class="container">
 
-  <div class="row">
+  <div class="row" id="project-content">
     <div class="col-12">
       <h2 class="text-center">{{ project.name | translate }}</h2>
-      <h3 class="text-center text-muted">{{ project.subtitle | translate }}</h3>
+      <h3 class="text-center">{{ project.subtitle | translate }}</h3>
       <p [innerHTML]="project.text1 | translate"></p>
       <img *ngIf="project.presentImgs[0]" class="img-fluid img-divider" [src]="project.img1" />
       <p [innerHTML]="project.text2 | translate"></p>

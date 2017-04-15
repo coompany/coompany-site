@@ -3,7 +3,7 @@ export const LANG_IT_VALUES = {
   'navbar.projects': 'Progetti',
   'navbar.contacts': 'Contatti',
 
-  'home.jumbo': `Progettiamo e realizziamo piattaforme digitali e soluzioni software`,
+  'home.jumbo': `Progettiamo e realizziamo<br />piattaforme digitali<br />e soluzioni software`,
   'home.jumbo.btn': 'Contattaci',
   'home.what.title': 'Cosa facciamo',
   'home.what.text1': `

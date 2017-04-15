@@ -20,18 +20,22 @@ export class HomeComponent implements OnInit {
     {
       name: 'La Scuola Open Source',
       img: '/assets/images/SOS.png',
+      imgBW: '/assets/images/SOS_bw.png',
       href: 'http://lascuolaopensource.xyz'
     }, {
       name: 'Regione Puglia',
       img: '/assets/images/puglia.png',
+      imgBW: '/assets/images/puglia_bw.png',
       href: 'http://www.regione.puglia.it/'
     }, {
       name: 'PechaKucha Venice',
       img: '/assets/images/pecha.png',
+      imgBW: '/assets/images/pecha_bw.png',
       href: 'http://www.pechakuchavenezia.org/'
     }, {
       name: 'Reactivicity',
       img: '/assets/images/reactivicity.png',
+      imgBW: '/assets/images/reactivicity_bw.png',
       href: '#'
     }
   ]

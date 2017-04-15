@@ -47,7 +47,9 @@
       <div class="row">
         <div class="col-3 client-col" *ngFor="let client of clients">
           <a [href]="client.href" [title]="client.name" target="_blank">
-            <img class="img-fluid" [src]="client.img" [alt]="client.name">
+            <img class="img-fluid" #img [src]="client.imgBW"
+                 (mouseleave)="img.src = client.imgBW"
+                 (mouseenter)="img.src = client.img" [alt]="client.name">
           </a>
         </div>
       </div>

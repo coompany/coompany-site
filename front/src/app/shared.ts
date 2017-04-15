@@ -31,4 +31,4 @@ export class Project {
   }
 }
 
-export type Client = { name: string, img: string, href: string }
+export type Client = { name: string, img: string, imgBW: string, href: string }

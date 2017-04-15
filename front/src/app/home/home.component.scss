@@ -85,19 +85,6 @@
     }
   }
 
-  .contacts-green:hover {
-    color: rgb(0, 230, 118);
-  }
-  .contacts-magenta:hover {
-    color: rgb(101, 31, 255);
-  }
-  .contacts-orange:hover {
-    color: rgb(255, 193, 7);
-  }
-  .contacts-cyan:hover {
-    color: rgb(0, 176, 255);
-  }
-
   @media (max-width: map-get($grid-breakpoints, 'md')) {
     .contacts-row {
       font-size: 1em;

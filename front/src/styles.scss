@@ -28,6 +28,28 @@
   color: $coom-orange;
 }
 
+$linkedin: #0177B5;
+$facebook: #3B5998;
+
+.contacts-green:hover {
+  color: rgb(0, 230, 118);
+}
+.contacts-magenta:hover {
+  color: rgb(101, 31, 255);
+}
+.contacts-orange:hover {
+  color: rgb(255, 193, 7);
+}
+.contacts-cyan:hover {
+  color: rgb(0, 176, 255);
+}
+.contacts-facebook:hover {
+  color: $facebook;
+}
+.contacts-linkedin:hover {
+  color: $linkedin;
+}
+
 
 // Clear input placeholder on focus
 input:focus::-webkit-input-placeholder { color:transparent; }

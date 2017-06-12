@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.supportedLanguages = [
-      { code: 'en', display: 'EN' },
-      { code: 'it', display: 'IT' }
+      { code: 'it', display: 'IT' },
+      { code: 'en', display: 'EN' }
     ];
 
     this.changeLanguage(0);

@@ -44,7 +44,8 @@ export class HomeComponent implements OnInit {
     'home.quotes.1',
     'home.quotes.2',
     'home.quotes.3',
-    'home.quotes.4'
+    'home.quotes.4',
+    'home.quotes.5'
   ]
 
   constructor(private translateService: TranslateService,
@@ -54,11 +55,14 @@ export class HomeComponent implements OnInit {
     this.projects = this.projectsService.getProjects();
     jQuery(document).ready(() => {
       this.doTypedQuotes();
+      this.translateService.langObservable.subscribe(lang => {
+        this.doTypedQuotes();
+      });
     });
   }
 
   private doTypedQuotes() {
-    jQuery('#they-tell-card .quote').typed({
+    jQuery('#they-say-card .quote').typed({
       strings: this.quotes.map(q => { return this.translateService.instant(q) }),
       contentType: 'html',
       typeSpeed: 20,

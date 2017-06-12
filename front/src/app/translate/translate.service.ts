@@ -1,13 +1,20 @@
 import { Injectable, Inject } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 import { TRANSLATIONS } from './translations';
 
 
 @Injectable()
 export class TranslateService {
   private _currentLang: string;
+  private _langObs: Subject<string> = new Subject<string>();
 
   public get currentLang() {
     return this._currentLang;
+  }
+
+  public get langObservable(): Observable<string> {
+    return this._langObs;
   }
 
   // inject our translations
@@ -16,6 +23,7 @@ export class TranslateService {
   public use(lang: string): void {
     // set current language
     this._currentLang = lang;
+    this._langObs.next(lang);
   }
 
   private translate(key: string): string {

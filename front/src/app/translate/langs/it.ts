@@ -31,9 +31,30 @@ export const LANG_IT_VALUES = {
     segreto è contattarci: siamo costantemente alla ricerca di nuove sfide.`,
   'home.contacts.theytell': 'Dicono di noi',
   'home.quotes.1':
-    `"Coompany are some of the best developers user interface designers I have met anywhere."
+    `"Lavorare con Vittorio e Andrea è sempre stimolante per l’esperienza, la cura e la dedizione che mettono in ogni progetto."
     <br /><br />
-   Giovanni Paolin, Project Manager, Cren Design`,
+   Giovanni Paolin - Cren Design`,
+  'home.quotes.2':
+    `"La collaborazione con Vittorio e Andrea è stata un importante occasione di
+    arricchimento e confronto per testare l’importanza degli strumenti partecipativi
+    per l’azione di comunità."
+    <br /><br />
+    Silvia Sivo - Pop Hub`,
+  'home.quotes.3':
+    `"Collaborare con Coompany è stata l’occasione per unire strategie abilitanti e azioni sul campo."
+    <br /><br />
+    Saverio Massaro - Esperimenti Architettonici`,
+  'home.quotes.4':
+    `"Vittorio e Andrea hanno lavorato con velocità, precisione ed efficienza. Sono andati oltre
+    i ruoli richiesti, arricchendo il progetto con nuove idee e gestendo in maniera ottimale
+    gli imprevisti sopraggiunti."
+    <br /><br />
+    Eleonora Milner - Lacuna/ae`,
+  'home.quotes.5':
+    `"Collaboro con Andrea e Vittorio dal 2009. Col tempo, apprezzo sempre di più la loro dedizione
+    e la loro capacità di pensare costantamente “out of the box”"
+    <br /><br />
+    Gianmarco Daniele - Università di Barcellona`,
   'home.join.title': 'Join us',
   'home.join.text': 'Lavora insieme a noi sui progetti che sviluppiamo',
   'home.join.btn': 'Contattaci',

@@ -14,9 +14,9 @@ declare let jQuery: any;
 })
 export class HomeComponent implements OnInit {
 
-  private projects: [Project]
+  public projects: [Project]
 
-  private clients: [Client] = [
+  public clients: [Client] = [
     {
       name: 'La Scuola Open Source',
       img: '/assets/images/SOS.png',
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  private quotes: [string] = [
+  public quotes: [string] = [
     'home.quotes.1',
     'home.quotes.2',
     'home.quotes.3',

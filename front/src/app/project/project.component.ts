@@ -12,8 +12,8 @@ import { BackendService } from '../backend.service';
 })
 export class ProjectComponent implements OnInit {
 
-  private project: Project;
-  private signupFormData: { model: string, text: string, class: string };
+  public project: Project;
+  public signupFormData: { model: string, text: string, class: string };
 
   constructor(private route: ActivatedRoute,
               private backendService: BackendService) {

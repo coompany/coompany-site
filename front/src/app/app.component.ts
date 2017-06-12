@@ -10,8 +10,8 @@ import { TranslateService } from './translate/translate.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  private supportedLanguages: [Language]
-  private selectedLanguageId: number
+  public supportedLanguages: [Language]
+  public selectedLanguageId: number
 
   constructor(router: Router, private translateService: TranslateService) {
     router.events.subscribe(s => {

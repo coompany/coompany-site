@@ -42,10 +42,10 @@
   <hr />
 
   <section class="row justify-content-center" id="clients">
-    <div class="col-11">
+    <div class="col-12 col-md-11">
       <h2 class="text-center">{{ 'home.clients.title' | translate }}</h2>
       <div class="row">
-        <div class="col-3 client-col" *ngFor="let client of clients">
+        <div class="col-12 col-sm-6 col-md-3 client-col" *ngFor="let client of clients">
           <a [href]="client.href" [title]="client.name" target="_blank">
             <img class="img-fluid" #img [src]="client.imgBW"
                  (mouseleave)="img.src = client.imgBW"

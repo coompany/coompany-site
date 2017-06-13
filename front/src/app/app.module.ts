@@ -16,6 +16,7 @@ import { ProjectComponent } from './project/project.component';
 import { ProjectsService } from './projects.service';
 import { ProjectResolver } from './project.resolver';
 import { BackendService } from './backend.service';
+import { DeviceService } from './device.service';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { BackendService } from './backend.service';
   ],
   providers: [
     TRANSLATION_PROVIDERS, TranslateService, BackendService,
-    JournalService, ProjectsService, ProjectResolver
+    JournalService, ProjectsService, ProjectResolver, DeviceService
   ],
   bootstrap: [AppComponent]
 })

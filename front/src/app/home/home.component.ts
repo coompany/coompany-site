@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project, Client } from '../shared';
 import { TranslateService } from '../translate';
 import { ProjectsService } from '../projects.service';
+import { DeviceService } from '../device.service';
 
 
 declare let jQuery: any;
@@ -48,8 +49,11 @@ export class HomeComponent implements OnInit {
     'home.quotes.5'
   ]
 
+  public isMobile: boolean;
+
   constructor(private translateService: TranslateService,
-              private projectsService: ProjectsService) { }
+              private projectsService: ProjectsService,
+              private deviceService: DeviceService) { }
 
   ngOnInit() {
     this.projects = this.projectsService.getProjects();
@@ -59,6 +63,8 @@ export class HomeComponent implements OnInit {
         this.doTypedQuotes();
       });
     });
+
+    this.isMobile = this.deviceService.isMobile;
   }
 
   private doTypedQuotes() {

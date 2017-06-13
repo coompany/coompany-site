@@ -10,7 +10,11 @@ class Cors {
     $response = $next($request);
     $response->header('Access-Control-Allow-Methods', 'HEAD, GET, POST, PUT, PATCH, DELETE');
     $response->header('Access-Control-Allow-Headers', $request->header('Access-Control-Request-Headers'));
-    $response->header('Access-Control-Allow-Origin', env('CORS_ORIGIN'));
+    if (strpos($request->header('Origin'), 'coompany'))
+        $cors = $request->header('Origin');
+    else
+        $cors = '';
+    $response->header('Access-Control-Allow-Origin', $cors);
     return $response;
   }
 

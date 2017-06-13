@@ -30,6 +30,61 @@
     }
   }
 
+  @media (max-width: map-get($grid-breakpoints, 'sm')) {
+    #home-jumbo {
+      .container {
+        video {
+          top: 290px;
+        }
+        .row {
+          .col {
+            padding-bottom: 118px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 330px) {
+    #home-jumbo {
+      .container {
+        video {
+          top: 400px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 440px) and (max-width: map-get($grid-breakpoints, 'sm')) {
+    #home-jumbo {
+      .container {
+        video {
+          top: 200px;
+        }
+        .row {
+          .col {
+            padding-bottom: 118px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints, 'md')) {
+    #home-jumbo {
+      .container {
+        video {
+          top: 144px;
+        }
+        .row {
+          .col {
+            padding-bottom: 124px;
+          }
+        }
+      }
+    }
+  }
+
   .client-col {
     margin-bottom: $interspace;
   }

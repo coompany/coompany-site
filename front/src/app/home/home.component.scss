@@ -119,6 +119,11 @@
         font-size: 14px;
       }
     }
+    @media (max-width: map-get($grid-breakpoints, 'md')) {
+      .card-block {
+        height: 280px;
+      }
+    }
   }
 
   #join-us {

@@ -4,12 +4,6 @@
 .home-project {
   margin-top: 40px;
 
-  @media (max-width: map-get($grid-breakpoints, 'md')) {
-    .project-name {
-      margin-top: $interspace / 2;
-    }
-  }
-
   .project-name {
     text-align: left;
     margin: 0 0 12px 0;
@@ -29,6 +23,12 @@
     &:hover,
     &:active {
       color: rgb(64, 196, 255);
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, 'md')) {
+    .project-name {
+      margin-top: $interspace / 2;
     }
   }
 }

@@ -26,7 +26,7 @@
              routerLink="home" fragment="contacts">{{ 'navbar.contacts' | translate }}</a>
         </li>
       </ul>
-      <ul class="list-inline mb-0 ml-2" id="langs-list">
+      <ul class="list-inline mb-0 ml-md-2" id="langs-list">
         <li *ngFor="let lang of supportedLanguages; let i = index" class="list-inline-item">
           <a class="btn btn-link btn-sm" role="button" (click)="changeLanguage(i)"
             [class.active]="i === selectedLanguageId">

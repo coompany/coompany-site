@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { DOCUMENT } from '@angular/platform-browser';
 
 import { Language } from './shared';
 import { TranslateService } from './translate/translate.service';
+
+declare const jQuery: any;
 
 
 @Component({
@@ -13,17 +16,20 @@ export class AppComponent implements OnInit {
   public supportedLanguages: [Language]
   public selectedLanguageId: number
 
-  constructor(router: Router, private translateService: TranslateService) {
+  constructor(router: Router,
+              private translateService: TranslateService,
+              @Inject(DOCUMENT) document: Document) {
     router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
         const tree = router.parseUrl(router.url);
         if (tree.fragment) {
           const element = document.querySelector(`#${tree.fragment}`);
           if (element) {
-            document.body.scrollTop += element.getBoundingClientRect().top - 60;
+            const top = element.getBoundingClientRect().top - 60;
+            jQuery(document).scrollTop(jQuery(document).scrollTop() + top);
           }
         } else {
-          document.body.scrollTop = 0;
+          jQuery(document).scrollTop(0);
         }
       }
     });

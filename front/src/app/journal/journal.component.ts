@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { JournalService, Post } from './';
+import { JournalService } from './journal.service';
+import { Post } from './post';
 
 
 @Component({

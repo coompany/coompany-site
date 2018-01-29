@@ -7,7 +7,7 @@
     background-color: rgb(245, 245, 245);
     padding-top: 60px;
     .container {
-      video {
+      img.animation {
         position: absolute;
         top: 30px;
         margin-right: -30px;
@@ -33,7 +33,7 @@
   @media (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
       .container {
-        video {
+        img.animation {
           top: 290px;
         }
         .row {
@@ -48,7 +48,7 @@
   @media (max-width: 330px) {
     #home-jumbo {
       .container {
-        video {
+        img.animation {
           top: 400px;
         }
       }
@@ -58,7 +58,7 @@
   @media (min-width: 440px) and (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
       .container {
-        video {
+        img.animation {
           top: 200px;
         }
         .row {
@@ -73,7 +73,7 @@
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints, 'md')) {
     #home-jumbo {
       .container {
-        video {
+        img.animation {
           top: 144px;
         }
         .row {

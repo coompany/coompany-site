@@ -3,17 +3,24 @@
 
 :host {
 
+  h2 {
+    font-size: 2.4em;
+  }
+
   #home-jumbo {
     background-color: rgb(245, 245, 245);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
     padding-top: 60px;
-    img.animation {
-      position: absolute;
-      top: 30px;
-    }
     .row {
+      background-image: url('/assets/animations/intro.gif');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
       .col {
         padding-top: 80px;
-        padding-bottom: 155px;
+        padding-bottom: 128px;
         #home-jumbo-p {
           p {
             line-height: 1.3em;
@@ -28,11 +35,17 @@
     }
   }
 
+  @media (max-width: map-get($grid-breakpoints, 'md')) {
+    #home-jumbo {
+      background-image: url('/assets/animations/intro.gif');
+      .row {
+        background-image: none;
+      }
+    }
+  }
+
   @media (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
-      img.animation {
-        top: 300px;
-      }
       .container {
         .row {
           .col {
@@ -43,19 +56,8 @@
     }
   }
 
-  @media (max-width: 330px) {
-    #home-jumbo {
-      img.animation {
-        top: 400px;
-      }
-    }
-  }
-
   @media (min-width: 440px) and (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
-      img.animation {
-        top: 200px;
-      }
       .container {
         .row {
           .col {
@@ -68,9 +70,6 @@
 
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints, 'md')) {
     #home-jumbo {
-      img.animation {
-        top: 144px;
-      }
       .container {
         .row {
           .col {

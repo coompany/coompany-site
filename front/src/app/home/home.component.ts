@@ -19,11 +19,6 @@ export class HomeComponent implements OnInit {
 
   public clients: [Client] = [
     {
-      name: 'La Scuola Open Source',
-      img: '/assets/images/SOS.png',
-      imgBW: '/assets/images/SOS_bw.png',
-      href: 'http://lascuolaopensource.xyz'
-    }, {
       name: 'Regione Puglia',
       img: '/assets/images/puglia.png',
       imgBW: '/assets/images/puglia_bw.png',
@@ -38,6 +33,21 @@ export class HomeComponent implements OnInit {
       img: '/assets/images/reactivicity.png',
       imgBW: '/assets/images/reactivicity_bw.png',
       href: '#'
+    }, {
+      name: 'La Scuola Open Source',
+      img: '/assets/images/SOS.png',
+      imgBW: '/assets/images/SOS_bw.png',
+      href: 'http://lascuolaopensource.xyz'
+    }, {
+      name: 'DREX',
+      img: '/assets/images/DREX.png',
+      imgBW: '/assets/images/DREX_bw.png',
+      href: 'http://drexperiment.com/'
+    }, {
+      name: 'IUAV',
+      img: '/assets/images/IUAV.png',
+      imgBW: '/assets/images/IUAV_bw.png',
+      href: 'http://www.iuav.it/homepage/'
     }
   ]
 

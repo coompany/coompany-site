@@ -1,5 +1,4 @@
 <section id="home-jumbo">
-  <img class="animation img-fluid" src="/assets/animations/intro.gif" />
   <div class="container">
     <div class="row">
       <div class="col">
@@ -47,7 +46,7 @@
     <div class="col-12 col-md-11">
       <h2 class="text-center">{{ 'home.clients.title' | translate }}</h2>
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 client-col" *ngFor="let client of clients">
+        <div class="col-12 col-sm-6 col-md-4 client-col" *ngFor="let client of clients">
           <a [href]="client.href" [title]="client.name" target="_blank">
             <img *ngIf="!isMobile" class="img-fluid" #img [src]="client.imgBW"
                  (mouseleave)="img.src = client.imgBW"

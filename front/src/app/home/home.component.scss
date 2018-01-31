@@ -6,17 +6,15 @@
   #home-jumbo {
     background-color: rgb(245, 245, 245);
     padding-top: 60px;
-    .container {
-      img.animation {
-        position: absolute;
-        top: 30px;
-        margin-right: -30px;
-        margin-left: -30px;
-      }
-      .row {
-        .col {
-          padding-top: 80px;
-          padding-bottom: 155px;
+    img.animation {
+      position: absolute;
+      top: 30px;
+    }
+    .row {
+      .col {
+        padding-top: 80px;
+        padding-bottom: 155px;
+        #home-jumbo-p {
           p {
             line-height: 1.3em;
             max-width: 800px;
@@ -32,10 +30,10 @@
 
   @media (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
+      img.animation {
+        top: 300px;
+      }
       .container {
-        img.animation {
-          top: 290px;
-        }
         .row {
           .col {
             padding-bottom: 118px;
@@ -47,20 +45,18 @@
 
   @media (max-width: 330px) {
     #home-jumbo {
-      .container {
-        img.animation {
-          top: 400px;
-        }
+      img.animation {
+        top: 400px;
       }
     }
   }
 
   @media (min-width: 440px) and (max-width: map-get($grid-breakpoints, 'sm')) {
     #home-jumbo {
+      img.animation {
+        top: 200px;
+      }
       .container {
-        img.animation {
-          top: 200px;
-        }
         .row {
           .col {
             padding-bottom: 118px;
@@ -72,10 +68,10 @@
 
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints, 'md')) {
     #home-jumbo {
+      img.animation {
+        top: 144px;
+      }
       .container {
-        img.animation {
-          top: 144px;
-        }
         .row {
           .col {
             padding-bottom: 124px;

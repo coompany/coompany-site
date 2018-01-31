@@ -40,9 +40,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     window.addEventListener('scroll', () => {
       this.activeNavs = {
-        what: this.isElementVisible(document.getElementById('what-we-do')) ? 'active' : '',
-        projects: this.isElementVisible(document.getElementById('projects')) ? 'active' : '',
-        contacts: this.isElementVisible(document.getElementById('contacts')) ? 'active' : ''
+        what: 'nav-link ' +
+          (this.isElementVisible(document.getElementById('what-we-do')) ? 'active' : ''),
+        projects: 'nav-link ' +
+          (this.isElementVisible(document.getElementById('projects')) ? 'active' : ''),
+        contacts: 'nav-link ' +
+          (this.isElementVisible(document.getElementById('contacts')) ? 'active' : '')
       };
     })
   }

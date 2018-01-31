@@ -1,39 +1,36 @@
-<nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-blurred">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right" type="button"
-            data-toggle="collapse" data-target="#main-navbar-collapsible"
-            aria-controls="main-navbar-collapsible" aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" routerLink="home">
-      <img [src]="logoUrl" height="30" />
-    </a>
+<nav class="navbar navbar-expand-md fixed-top navbar-light bg-blurred">
+  <a class="navbar-brand" routerLink="home">
+    <img [src]="logoUrl" height="30" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#main-navbar-collapsible" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse justify-content-end align-items-center flex-row"
-         id="main-navbar-collapsible">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a [class]="activeNavs.what + ' nav-link'"
-             routerLink="home" fragment="what-we-do">{{ 'navbar.what' | translate }}</a>
-        </li>
-        <li class="nav-item">
-          <a [class]="activeNavs.projects + ' nav-link'"
-             routerLink="home" fragment="projects">{{ 'navbar.projects' | translate }}</a>
-        </li>
-        <li class="nav-item">
-          <a [class]="activeNavs.contacts + ' nav-link'"
-             routerLink="home" fragment="contacts">{{ 'navbar.contacts' | translate }}</a>
-        </li>
-      </ul>
-      <ul class="list-inline mb-0 ml-md-2" id="langs-list">
-        <li *ngFor="let lang of supportedLanguages; let i = index" class="list-inline-item">
-          <a class="btn btn-link btn-sm" role="button" (click)="changeLanguage(i)"
-            [class.active]="i === selectedLanguageId">
-            {{ lang.display }}
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse justify-content-end align-items-center flex-row"
+       id="main-navbar-collapsible">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [class]="activeNavs.what"
+           routerLink="home" fragment="what-we-do">{{ 'navbar.what' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class]="activeNavs.projects"
+           routerLink="home" fragment="projects">{{ 'navbar.projects' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class]="activeNavs.contacts"
+           routerLink="home" fragment="contacts">{{ 'navbar.contacts' | translate }}</a>
+      </li>
+    </ul>
+    <ul class="list-inline mb-0 ml-md-2" id="langs-list">
+      <li *ngFor="let lang of supportedLanguages; let i = index" class="list-inline-item">
+        <a class="btn btn-link btn-sm" role="button" (click)="changeLanguage(i)"
+          [class.active]="i === selectedLanguageId">
+          {{ lang.display }}
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>

@@ -131,18 +131,18 @@ body {
     @include button-outline-coom-variant($coom-orange);
   }
   .btn.btn-outline-coom-secondary {
-    @include button-outline-coom-variant($btn-secondary-border, lighten($btn-secondary-border, 20%));
+    @include button-outline-coom-variant($secondary, lighten($secondary, 20%));
   }
   .btn.btn-outline-coom-info {
-    @include button-outline-coom-variant($btn-info-bg, lighten($btn-info-bg, 20%));
+    @include button-outline-coom-variant($info, lighten($info, 20%));
   }
   .btn.btn-outline-coom-success {
-    @include button-outline-coom-variant($btn-success-bg, lighten($btn-success-bg, 20%));
+    @include button-outline-coom-variant($success, lighten($success, 20%));
   }
   .btn.btn-outline-coom-warning {
-    @include button-outline-coom-variant($btn-warning-bg, lighten($btn-warning-bg, 20%));
+    @include button-outline-coom-variant($warning, lighten($warning, 20%));
   }
   .btn.btn-outline-coom-danger {
-    @include button-outline-coom-variant($btn-danger-bg, lighten($btn-danger-bg, 20%));
+    @include button-outline-coom-variant($danger, lighten($danger, 20%));
   }
 }

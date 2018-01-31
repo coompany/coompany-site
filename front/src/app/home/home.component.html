@@ -1,14 +1,16 @@
 <section id="home-jumbo">
+  <img class="animation img-fluid" src="/assets/animations/intro.gif" />
   <div class="container">
-    <img class="animation img-fluid" src="/assets/animations/intro.gif" />
     <div class="row">
       <div class="col">
-        <p [innerHTML]="'home.jumbo' | translate"></p>
-        <div>
-          <a class="btn btn-outline-coom-primary btn-lg"
-             routerLink="/home" fragment="contacts">
-            {{ 'home.jumbo.btn' | translate }}
-          </a>
+        <div id="home-jumbo-p">
+          <p [innerHTML]="'home.jumbo' | translate"></p>
+          <div>
+            <a class="btn btn-outline-coom-primary btn-lg"
+               routerLink="/home" fragment="contacts">
+              {{ 'home.jumbo.btn' | translate }}
+            </a>
+          </div>
         </div>
       </div>
     </div>

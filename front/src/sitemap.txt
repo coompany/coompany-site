@@ -1,0 +1,7 @@
+http://coompany.io/home
+http://coompany.io/home#what-we-do
+http://coompany.io/home#projects
+http://coompany.io/home#contacts
+http://coompany.io/projects/coo2plan
+http://coompany.io/projects/sos
+http://coompany.io/projects/pechakucha

@@ -48,6 +48,16 @@ export class HomeComponent implements OnInit {
       img: '/assets/images/IUAV.png',
       imgBW: '/assets/images/IUAV_bw.png',
       href: 'http://www.iuav.it/homepage/'
+    }, {
+      name: 'Onggi',
+      img: '/assets/images/onggi.png',
+      imgBW: '/assets/images/onggi_bw.png',
+      href: 'https://www.onggi.it/'
+    }, {
+      name: 'DOME',
+      img: '/assets/images/dome.png',
+      imgBW: '/assets/images/dome_bw.png',
+      href: 'https://www.domeproject.space/'
     }
   ]
 
